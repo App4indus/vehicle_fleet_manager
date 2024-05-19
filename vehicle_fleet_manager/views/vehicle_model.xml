@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+	<data>
+
+		<!-- ACTION vehicle models -->
+		<record id="act_vehiclefleetmanager_vehicle_model_a4i" model="ir.actions.act_window">
+		    <field name="name">Vehicle models</field>
+		    <field name="res_model">a4i.vehiclefleetmanager.vehicle.model</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form</field>
+		</record>
+
+        <!-- TREE VIEW vehicle models -->
+		<record id='view_tree_vehicletfleetmanager_vehicle_model_a4i' model='ir.ui.view'>
+            <field name="name">view_tree_vehicletfleetmanager_vehicle_model_a4i</field>
+            <field name="model">a4i.vehiclefleetmanager.vehicle.model</field>
+            <field name="arch" type="xml">
+                <tree string="Vehicle fleet manager - vehicle models">
+                    <field name="name"/>
+                    <field name="vehicle_manufacturer_id"/>
+                    <field name="model_year"/>
+                    <field name="type_id"/>
+                    <field name="energy_type"/>
+                    <field name="transmission_type"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- FORM VIEW vehicle model -->
+		<record id='view_form_vehicletfleetmanager_vehicle_model_a4i' model='ir.ui.view'>
+            <field name="name">view_form_vehicletfleetmanager_vehicle_model_a4i</field>
+            <field name="model">a4i.vehiclefleetmanager.vehicle.model</field>
+            <field name="arch" type="xml">
+                <form string="vehicle fleet manager - vehicle model">
+
+                    <group colspan="8" col="8">
+                        <group name="logo" colspan="2" col="1">
+                            <field name="image" widget="image" nolabel="1" colspan="1" class="oe_left" img_maxheight="150px" allowpopup="1"/>
+                        </group>
+                        <group name="info" string="Infos" colspan="6" col="4">
+                            <field name="name"/>
+                            <field name="type_id"/>
+                            <field name="vehicle_manufacturer_id"/>
+                            <field name="model_year"/>
+
+                        </group>
+                         <group name="carbody" string="Car body" colspan="6" col="6">
+                            <field name="seats_nb"/>
+                            <field name="doors_nb"/>
+                        </group>
+                         <group name="fiscality" string="Fiscality" colspan="6" col="6">
+                            <field name="fiscal_horsepower"/>
+                            <field name="co2_emissions"/>
+                            <field name="environmental_bonus_malus"/>
+                        </group>
+                        <group name="motorisation" string="Motorisation" colspan="6" col="6">
+                            <field name="transmission_type"/>
+                            <field name="energy_type"/>
+                            <field name="engine_power"/>
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</openerp>

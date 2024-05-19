@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <!-- Cron - stop contract reminder -->
+        <record model="ir.cron" id="a4i_cron_create_reminder">
+            <field name='name'>Create reminder to stop a contract</field>
+            <field name='interval_number'>1</field>
+            <field name='interval_type'>days</field>
+            <field name="numbercall">-1</field>
+            <field name="active">True</field>
+            <field name="model">a4i.administrative.contract</field>
+            <field name="function">cron_create_reminder</field>
+            <field name="args">()</field>
+            <field name="comment">Cron which generate a reminder to stop contract.</field>
+        </record>
+    </data>
+</openerp>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record model="ir.cron" id="generate_contract_costs_job">
+            <field name='name'>Generate costs of contracts</field>
+            <field name='interval_number'>1</field>
+            <field name='interval_type'>days</field>
+            <field name="numbercall">-1</field>
+            <field name="active">True</field>
+            <field name="model">a4i.vehiclefleetmanager.contract</field>
+            <field name="function">_cron_generate_automatic_costs</field>
+            <field name="args">()</field>
+            <field name="comment">Cron which generate contract's costs.</field>
+        </record>
+    </data>
+</openerp>

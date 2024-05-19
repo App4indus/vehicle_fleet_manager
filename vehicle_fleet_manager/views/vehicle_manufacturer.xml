@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+	<data>
+
+		<!-- ACTION vehicle manufacturers -->
+		<record id="act_vehiclefleetmanager_vehicle_manufacturer_a4i" model="ir.actions.act_window">
+		    <field name="name">vehicle manufacturers</field>
+		    <field name="res_model">a4i.vehiclefleetmanager.vehicle.manufacturer</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">kanban,form,tree</field>
+		</record>
+
+        <!-- TREE VIEW vehicle manufacturers -->
+		<record id='view_tree_vehicletfleetmanager_vehicle_manufacturer_a4i' model='ir.ui.view'>
+            <field name="name">view_tree_vehicletfleetmanager_vehicle_manufacturer_a4i</field>
+            <field name="model">a4i.vehiclefleetmanager.vehicle.manufacturer</field>
+            <field name="arch" type="xml">
+                <tree string="vehicle fleet manager - vehicle manufacturers">
+                    <field name="code"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+		<!-- KANBAN VIEW vehicle manufacturers -->
+		<record id="view_kanban_vehicletfleetmanager_vehicle_manufacturer_a4i" model="ir.ui.view">
+			<field name="name">view_kanban_vehicletfleetmanager_vehicle_manufacturer_a4i</field>
+			<field name="model">a4i.vehiclefleetmanager.vehicle.manufacturer</field>
+			<field name="arch" type="xml">
+				<kanban>
+					<field name="logo"/>
+					<field name="name"/>
+
+					<templates>
+						<t t-name="kanban-box">
+							<div t-attf-class="oe_kanban_card oe_kanban_global_click">
+
+								<div class="oe_kanban_details">
+									<h4 class="oe_partner_heading">
+										<a type="open">
+											<field name="name" />
+										</a>
+									</h4>
+								</div>
+								<a type="open">
+									<t>
+										<img t-att-src="kanban_image('a4i.vehiclefleetmanager.vehicle.manufacturer', 'logo', record.id.value)" class="oe_kanban_image" />
+									</t>
+								</a>
+
+
+							</div>
+						</t>
+					</templates>
+
+				</kanban>
+			</field>
+		</record>
+
+        <!-- FORM VIEW vehicle manufacturer -->
+		<record id='view_form_vehicletfleetmanager_vehicle_manufacturer_a4i' model='ir.ui.view'>
+            <field name="name">view_form_vehicletfleetmanager_vehicle_manufacturer_a4i</field>
+            <field name="model">a4i.vehiclefleetmanager.vehicle.manufacturer</field>
+            <field name="arch" type="xml">
+                <form string="vehicle fleet manager - vehicle manufacturer">
+
+					<group col="6">
+						<group name="logo" colspan="1" col="1">
+							<field name="logo" widget="image" nolabel="1" colspan="1" class="oe_left" img_maxheight="100px" allowpopup="1"/>
+						</group>
+						<group name="info" string="Infos" colspan="5" col="4">
+							<field name="code"/>
+							<field name="name"/>
+						</group>
+					</group>
+                </form>
+            </field>
+        </record>
+    </data>
+</openerp>

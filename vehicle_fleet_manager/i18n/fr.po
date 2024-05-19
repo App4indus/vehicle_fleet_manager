@@ -1,0 +1,2274 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* vehicle_fleet_manager
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-19 21:06+0000\n"
+"PO-Revision-Date: 2024-02-19 21:06+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: vehicle_fleet_manager
+#: model:ir.cron,comment:vehicle_fleet_manager.generate_contract_costs_job
+msgid "\n"
+"Cron which generate contract's costs."
+msgstr "\n"
+"Cron qui génère les coûts de contrats"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_kanban_vehicletfleetmanager_vehicle_a4i
+msgid "<b>Numberplate :</b>"
+msgstr "<b>Plaque immatriculation :</b>"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_kanban_vehicletfleetmanager_vehicle_a4i
+msgid "<b>Type : </b>"
+msgstr "<b>Type : </b>"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_use_a4i
+msgid "Accept"
+msgstr "Accepter"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/vehicle_use.py:0,a4i.vehiclefleetmanager.vehicle.use
+#, python-format
+msgid "Accepted"
+msgstr "Accepté"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_accident_quick_create_a4i
+#: code:addons/vehicle_fleet_manager/models/vehicle_accident.py:0,a4i.vehiclefleetmanager.vehicle.accident
+#: code:addons/vehicle_fleet_manager/wizards/accident_quick_create.py:0,a4i.vehiclefleetmanager.accident.quick.create.wizard
+#, python-format
+msgid "Accident"
+msgstr "Accident"
+
+#. module: vehicle_fleet_manager
+#: model:ir.actions.act_window,name:vehicle_fleet_manager.act_vehiclefleetmanager_accident_quick_create_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_accident_quick_create_a4i
+msgid "Accident - quick create"
+msgstr "Création rapide sinistre"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model,name:vehicle_fleet_manager.model_a4i_vehiclefleetmanager_accident_quick_create_wizard
+msgid "Accident - quick creation"
+msgstr "Création rapide sinistre"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_accident_quick_create_wizard_accident_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_accident_date
+msgid "Accident date"
+msgstr "Date du sinistre"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_accident_quick_create_wizard_accident_location
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_accident_location
+msgid "Accident location"
+msgstr "Lieu du sinistre"
+
+#. module: vehicle_fleet_manager
+#: model:ir.actions.act_window,name:vehicle_fleet_manager.act_vehiclefleetmanager_accident_a4i
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_ids
+#: model:ir.ui.menu,name:vehicle_fleet_manager.vehiclefleetmanager_vehicle_accident_menu_a4i
+#: model:ir.ui.menu,name:vehicle_fleet_manager.vehiclefleetmanager_vehicle_accidents_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_a4i
+msgid "Accidents"
+msgstr "Sinistres"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_acquisition_mode
+msgid "Acquisition mode"
+msgstr "Mode d’acquisition"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_contract_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_fine_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_intervention_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_a4i
+msgid "Actions"
+msgstr "Actions"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_add_contract_cost_a4i
+msgid "Add a manual contract cost"
+msgstr "Ajouter manuellement un coût lié à un contrat"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_add_contract_cost_a4i
+msgid "Add cost"
+msgstr "Ajouter un coût"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_contract_a4i
+#: code:addons/vehicle_fleet_manager/models/contract.py:0,a4i.vehiclefleetmanager.contract
+#, python-format
+msgid "Add manual cost"
+msgstr "Ajouter manuellement un coût"
+
+#. module: vehicle_fleet_manager
+#: model:ir.actions.act_window,name:vehicle_fleet_manager.act_vehiclefleetmanager_add_vehicle_a4i
+msgid "Add vehicle"
+msgstr "Ajouter un véhicule"
+
+#. module: vehicle_fleet_manager
+#: model:res.groups,name:vehicle_fleet_manager.group_vehicle_fleet_vehicle_administrator
+msgid "Administrator"
+msgstr "Administrateur"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_add_cost_amount
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_cost_amount
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_amount
+msgid "Amount"
+msgstr "Montant"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.menu,name:vehicle_fleet_manager.vehiclefleetmanager_fines_analysis_a4i
+#: model:ir.ui.menu,name:vehicle_fleet_manager.vehiclefleetmanager_interventions_analysis_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_contract_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_fine_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_intervention_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_a4i
+msgid "Analysis"
+msgstr "Analyse"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/contract.py:0,a4i.vehiclefleetmanager.contract
+#, python-format
+msgid "Annually"
+msgstr "Annuel"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/vehicle_fine.py:0,a4i.vehiclefleetmanager.vehicle.fine
+#: code:addons/vehicle_fleet_manager/models/vehicle_intervention.py:0,a4i.vehiclefleetmanager.vehicle.intervention
+#, python-format
+msgid "April"
+msgstr "Avril"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_a4i
+msgid "Assignation"
+msgstr "Attribution"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_assignation_date
+msgid "Assignation date"
+msgstr "Date d’attribution"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_assignation_type
+msgid "Assignation type"
+msgstr "Type d’attribution"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_assigned_driver_id
+msgid "Assigned driver"
+msgstr "Conducteur assigné"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/vehicle_fine.py:0,a4i.vehiclefleetmanager.vehicle.fine
+#: code:addons/vehicle_fleet_manager/models/vehicle_intervention.py:0,a4i.vehiclefleetmanager.vehicle.intervention
+#, python-format
+msgid "August"
+msgstr "Août"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/vehicle.py:0,a4i.vehiclefleetmanager.vehicle
+#, python-format
+msgid "Automatic"
+msgstr "Automatique"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_calendar_vehicletfleetmanager_use_a4i
+msgid "Calendar vehicles uses"
+msgstr "Calendrier d’utilisation véhicules"
+
+#. module: vehicle_fleet_manager
+#: model:res.groups,name:vehicle_fleet_manager.group_vehicle_fleet_vehicle_can_book
+msgid "Can book a vehicle"
+msgstr "Peut réserver un véhicule"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_accident_quick_create_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_add_contract_cost_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_fine_quick_create_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_use_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_intervention_quick_create_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_update_odometer_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_vehicle_quick_create_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_vehicle_use_request_a4i
+#: code:addons/vehicle_fleet_manager/models/vehicle_use.py:0,a4i.vehiclefleetmanager.vehicle.use
+#, python-format
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_chassis_number
+msgid "Chassis number"
+msgstr "N° chassis"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_chassis_number
+msgid "Chassis number of the vehicle"
+msgstr "N° Chassis du véhicule"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_citation_date
+msgid "Citation date"
+msgstr "Date de contravention"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_citation_location
+msgid "Citation location"
+msgstr "Lieu de contravention"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_manufacturer_code
+msgid "Code"
+msgstr "Code"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_color
+msgid "Color"
+msgstr "Couleur"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_request_use_wizard_notes
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_use_notes
+msgid "Comments"
+msgstr "Commentaires"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.menu,name:vehicle_fleet_manager.vehiclefleetmanager_config_menu_a4i
+msgid "Configuration"
+msgstr "Configuration"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_fine_a4i
+msgid "Contest"
+msgstr "Contester"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_contestation_date
+msgid "Contestation date"
+msgstr "Date de contestation"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/vehicle_fine.py:0,a4i.vehiclefleetmanager.vehicle.fine
+#, python-format
+msgid "Contested"
+msgstr "Contestée"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_add_cost_contract_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_cost_contract_id
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_add_contract_cost_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_a4i
+msgid "Contract"
+msgstr "Contrat"
+
+#. module: vehicle_fleet_manager
+#: model:ir.actions.act_window,name:vehicle_fleet_manager.act_vehiclefleetmanager_contract_cost_a4i
+msgid "Contract costs"
+msgstr "Coûts du contrat"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_contract_reference
+msgid "Contract reference"
+msgstr "Référence contrat"
+
+#. module: vehicle_fleet_manager
+#: model:ir.actions.act_window,name:vehicle_fleet_manager.act_vehiclefleetmanager_contract_a4i
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_contract_ids
+#: model:ir.ui.menu,name:vehicle_fleet_manager.vehiclefleetmanager_contract_menu_a4i
+#: model:ir.ui.menu,name:vehicle_fleet_manager.vehiclefleetmanager_contracts_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_a4i
+msgid "Contracts"
+msgstr "Contrats"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_add_contract_cost_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_contract_cost_a4i
+msgid "Cost"
+msgstr "Coût"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_purchase_cost
+msgid "Cost (if purchased)"
+msgstr "Coût (si acheté)"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_cost_type
+msgid "Cost type"
+msgstr "Type de coût"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_contract_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_a4i
+msgid "Costs"
+msgstr "Coûts"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_accident_quick_create_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_a4i
+#: code:addons/vehicle_fleet_manager/models/vehicle.py:0,a4i.vehiclefleetmanager.vehicle
+#, python-format
+msgid "Create accident"
+msgstr "Créer un sinistre"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_fine_quick_create_a4i
+msgid "Create fine"
+msgstr "Créer une contravention"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_intervention_quick_create_a4i
+#: code:addons/vehicle_fleet_manager/models/vehicle.py:0,a4i.vehiclefleetmanager.vehicle
+#, python-format
+msgid "Create intervention"
+msgstr "Créer une intervention"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_vehicle_use_request_a4i
+#: code:addons/vehicle_fleet_manager/models/vehicle.py:0,a4i.vehiclefleetmanager.vehicle
+#, python-format
+msgid "Request vehicle use"
+msgstr "Créer une demande d'utilisation"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_vehicle_use_request_a4i
+msgid "Create request"
+msgstr "Créer une requête"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_vehicle_quick_create_a4i
+msgid "Create vehicle"
+msgstr "Créer un véhicule"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_accident_quick_create_wizard_create_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_add_cost_create_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_cost_create_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_create_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_type_create_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_driver_create_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_fine_quick_create_wizard_create_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_intervention_quick_create_wizard_create_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_label_create_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_create_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_create_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_create_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_create_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_type_create_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_manufacturer_create_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_create_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_update_create_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_quick_create_wizard_create_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_request_use_wizard_create_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_type_create_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_use_create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_accident_quick_create_wizard_create_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_add_cost_create_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_cost_create_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_create_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_type_create_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_driver_create_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_fine_quick_create_wizard_create_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_intervention_quick_create_wizard_create_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_label_create_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_create_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_create_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_create_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_create_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_type_create_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_manufacturer_create_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_create_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_update_create_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_quick_create_wizard_create_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_request_use_wizard_create_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_type_create_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_use_create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_add_cost_currency_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_cost_currency_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_currency_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_currency_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_currency_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_currency_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_currency_id
+msgid "Currency"
+msgstr "Devise"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/contract.py:0,a4i.vehiclefleetmanager.contract
+#, python-format
+msgid "Daily"
+msgstr "Quotidien"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_add_cost_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_cost_date
+msgid "Date"
+msgstr "Date"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_use_request_creation_date
+msgid "Date of request"
+msgstr "Date de requête"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_fine_quick_create_wizard_citation_date
+msgid "Date of the fine"
+msgstr "Date de contravention"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_use_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_vehicle_use_request_a4i
+msgid "Dates"
+msgstr "Dates"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/vehicle_fine.py:0,a4i.vehiclefleetmanager.vehicle.fine
+#: code:addons/vehicle_fleet_manager/models/vehicle_intervention.py:0,a4i.vehiclefleetmanager.vehicle.intervention
+#, python-format
+msgid "December"
+msgstr "Décembre"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_accident_quick_create_wizard_declaration_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_declaration_date
+msgid "Declaration date"
+msgstr "Date de déclaration"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_accident_a4i
+msgid "Declare"
+msgstr "Déclarer"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/vehicle_accident.py:0,a4i.vehiclefleetmanager.vehicle.accident
+#, python-format
+msgid "Declared"
+msgstr "Declarée"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_deductible_amount
+msgid "Deductible amount"
+msgstr "Montant franchise"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/vehicle.py:0,a4i.vehiclefleetmanager.vehicle
+#, python-format
+msgid "Diesel"
+msgstr "Diesel"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_accident_quick_create_wizard_display_name
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_add_cost_display_name
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_cost_display_name
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_display_name
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_type_display_name
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_driver_display_name
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_fine_quick_create_wizard_display_name
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_intervention_quick_create_wizard_display_name
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_label_display_name
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_display_name
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_display_name
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_display_name
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_display_name
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_type_display_name
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_manufacturer_display_name
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_display_name
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_update_display_name
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_quick_create_wizard_display_name
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_request_use_wizard_display_name
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_type_display_name
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_use_display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_document_ids
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_document_ids
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_document_ids
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_document_ids
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_document_ids
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_accident_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_contract_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_fine_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_intervention_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_a4i
+msgid "Documents"
+msgstr "Documents"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_accident_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_intervention_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_use_a4i
+#: code:addons/vehicle_fleet_manager/models/vehicle_accident.py:0,a4i.vehiclefleetmanager.vehicle.accident
+#: code:addons/vehicle_fleet_manager/models/vehicle_intervention.py:0,a4i.vehiclefleetmanager.vehicle.intervention
+#: code:addons/vehicle_fleet_manager/models/vehicle_use.py:0,a4i.vehiclefleetmanager.vehicle.use
+#, python-format
+msgid "Done"
+msgstr "Terminé"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_accident_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_contract_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_a4i
+#: code:addons/vehicle_fleet_manager/models/contract.py:0,a4i.vehiclefleetmanager.contract
+#: code:addons/vehicle_fleet_manager/models/vehicle_accident.py:0,a4i.vehiclefleetmanager.vehicle.accident
+#, python-format
+msgid "Draft"
+msgstr "Brouillon"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_accident_quick_create_wizard_driver_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_fine_quick_create_wizard_driver_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_driver_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_driver_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_request_use_wizard_driver_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_use_driver_id
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_vehicle_use_request_a4i
+msgid "Driver"
+msgstr "Conducteur"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_driver_driving_license_date
+msgid "Driving license date"
+msgstr "Date permis de conduire"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_driver_driving_license_document
+msgid "Driving license document"
+msgstr "Permis de conduire"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_effective_cost_ids
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_contract_a4i
+msgid "Effective costs"
+msgstr "Coûts effectifs"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/vehicle.py:0,a4i.vehiclefleetmanager.vehicle
+#, python-format
+msgid "Electric"
+msgstr "Electrique"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_end_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_request_use_wizard_end_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_use_end_date
+msgid "End date"
+msgstr "Date de fin"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_end_date
+msgid "End date of the contract"
+msgstr "Date de fin du contrat"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_use_end_date
+msgid "End date of the use"
+msgstr "Date de fin utilisation"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_energy_type
+msgid "Energy"
+msgstr "Energie"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_environmental_bonus_malus
+msgid "Environmental bonus / malus"
+msgstr "Bonus/malus environnemental"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_doors_nb
+msgid "Doors nb"
+msgstr "Nombre portes"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_engine_power
+msgid "Engine power (cv)"
+msgstr "Puissance (cv)"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fiscal_horsepower
+msgid "Fiscal horsepower"
+msgstr "Puissance fiscale"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model,name:vehicle_fleet_manager.model_a4i_vehiclefleetmanager_contract_add_cost
+msgid "Enter manual cost"
+msgstr "Entrer un coût manuel"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_expected_delivery_date
+msgid "Expected delivery date"
+msgstr "Date de livraison attendue"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_expected_delivery_date
+msgid "Expected delivery date of the vehicle"
+msgstr "Date de livraison attendue du véhicule"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_expertise_date
+msgid "Expertise date"
+msgstr "Date d’expertise"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/contract.py:0,a4i.vehiclefleetmanager.contract
+#, python-format
+msgid "Expired"
+msgstr "Expiré"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/vehicle_fine.py:0,a4i.vehiclefleetmanager.vehicle.fine
+#: code:addons/vehicle_fleet_manager/models/vehicle_intervention.py:0,a4i.vehiclefleetmanager.vehicle.intervention
+#, python-format
+msgid "February"
+msgstr "Février"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/vehicle.py:0,a4i.vehiclefleetmanager.vehicle
+#, python-format
+msgid "Finance Lease"
+msgstr "Leasing (Crédit bail)"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_fine_quick_create_a4i
+msgid "Fine"
+msgstr "Contravention"
+
+#. module: vehicle_fleet_manager
+#: model:ir.actions.act_window,name:vehicle_fleet_manager.act_vehiclefleetmanager_fine_quick_create_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_fine_quick_create_a4i
+msgid "Fine - quick create"
+msgstr "Création rapide contravention"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model,name:vehicle_fleet_manager.model_a4i_vehiclefleetmanager_fine_quick_create_wizard
+msgid "Fine - quick creation"
+msgstr "Création rapide contravention"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_amount
+msgid "Fine amount"
+msgstr "Montant contravention"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_fine_quick_create_wizard_citation_date
+msgid "Fine date"
+msgstr "Date de contravention"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_fine_quick_create_wizard_citation_location
+msgid "Fine location"
+msgstr "Lieu contravention"
+
+#. module: vehicle_fleet_manager
+#: model:ir.actions.act_window,name:vehicle_fleet_manager.act_vehiclefleetmanager_fine_a4i
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_ids
+#: model:ir.ui.menu,name:vehicle_fleet_manager.vehiclefleetmanager_vehicle_fine_menu_a4i
+#: model:ir.ui.menu,name:vehicle_fleet_manager.vehiclefleetmanager_vehicle_fines_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_a4i
+msgid "Fines"
+msgstr "Contraventions"
+
+#. module: vehicle_fleet_manager
+#: model:ir.actions.act_window,name:vehicle_fleet_manager.act_vehiclefleetmanager_fine_analysis_a4i
+msgid "Fines analysis"
+msgstr "Analyse des contraventions"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/vehicle_accident.py:0,a4i.vehiclefleetmanager.vehicle.accident
+#: code:addons/vehicle_fleet_manager/wizards/accident_quick_create.py:0,a4i.vehiclefleetmanager.accident.quick.create.wizard
+#, python-format
+msgid "Fire"
+msgstr "Incendie"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_driver_first_name
+msgid "First name"
+msgstr "Prénom"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/vehicle.py:0,a4i.vehiclefleetmanager.vehicle
+#: code:addons/vehicle_fleet_manager/models/vehicle_intervention.py:0,a4i.vehiclefleetmanager.vehicle.intervention
+#, python-format
+msgid "Fixed"
+msgstr "Réparé"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_periodical_cost_frequency
+msgid "Frequency periodical cost"
+msgstr "Fréquence des coûts périodiques"
+
+#. module: vehicle_fleet_manager
+#: model:res.groups,name:vehicle_fleet_manager.group_vehicle_fleet_vehicle_functional
+msgid "Functional"
+msgstr "Fonctionnel"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/vehicle.py:0,a4i.vehiclefleetmanager.vehicle
+#, python-format
+msgid "Gasoline"
+msgstr "Gasoil"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_a4i
+msgid "Geolocation"
+msgstr "Géolocalisation"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_geolocation_enabled
+msgid "Geolocation enabled"
+msgstr "Géolocalisation activée"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_geolocation_reference
+msgid "Geolocation reference"
+msgstr "Référence géolocalisation"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_accident_quick_create_wizard_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_add_cost_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_cost_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_type_id,a4i.vehiclefleetmanager.contract.type
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_driver_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_fine_quick_create_wizard_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_intervention_quick_create_wizard_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_label_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_type_id,a4i.vehiclefleetmanager.vehicle.intervention.type
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_manufacturer_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_update_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_quick_create_wizard_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_request_use_wizard_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_type_id,a4i.vehiclefleetmanager.vehicle.type
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_use_id
+msgid "ID"
+msgstr "ID"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_vehicle_quick_create_a4i
+msgid "Identification"
+msgstr "Identification"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_image
+msgid "Image"
+msgstr "Image"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_accident_a4i
+#: code:addons/vehicle_fleet_manager/models/vehicle_accident.py:0,a4i.vehiclefleetmanager.vehicle.accident
+#, python-format
+msgid "In expertise"
+msgstr "En cours d’expertise"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_intervention_a4i
+#: code:addons/vehicle_fleet_manager/models/contract.py:0,a4i.vehiclefleetmanager.contract
+#: code:addons/vehicle_fleet_manager/models/vehicle_intervention.py:0,a4i.vehiclefleetmanager.vehicle.intervention
+#, python-format
+msgid "In progress"
+msgstr "En cours"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_accident_a4i
+msgid "In reparation"
+msgstr "En réparation"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_contract_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_a4i
+#: code:addons/vehicle_fleet_manager/models/vehicle.py:0,a4i.vehiclefleetmanager.vehicle
+#, python-format
+msgid "In service"
+msgstr "En service"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_accident_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_contract_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_contract_cost_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_fine_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_intervention_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_manufacturer_a4i
+msgid "Infos"
+msgstr "Infos"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/contract.py:0,a4i.vehiclefleetmanager.contract.cost
+#, python-format
+msgid "Initial"
+msgstr "Initial"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_application_cost
+msgid "Initial application fees"
+msgstr "Frais d’application"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_contract_a4i
+msgid "Initial cost"
+msgstr "Cout initial"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_application_cost
+msgid "Initial cost fees for the application of the contract"
+msgstr "Frais d’application initiaux au contrat"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_accident_a4i
+msgid "Insurance"
+msgstr "Assurance"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_insurance_company
+msgid "Insurance company"
+msgstr "Compagnie d’assurance"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_accident_quick_create_wizard_internal_note
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_internal_note
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_fine_quick_create_wizard_internal_note
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_intervention_quick_create_wizard_internal_note
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_internal_note
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_internal_note
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_internal_note
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_internal_note
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_internal_note
+msgid "Internal notes"
+msgstr "Notes internes"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_intervention_quick_create_a4i
+msgid "Intervention"
+msgstr "Intervention"
+
+#. module: vehicle_fleet_manager
+#: model:ir.actions.act_window,name:vehicle_fleet_manager.act_vehiclefleetmanager_intervention_quick_create_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_intervention_quick_create_a4i
+msgid "Intervention - quick create"
+msgstr "Création rapide d’intervention"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model,name:vehicle_fleet_manager.model_a4i_vehiclefleetmanager_intervention_quick_create_wizard
+msgid "Intervention - quick creation"
+msgstr "Création rapide d’intervention"
+
+#. module: vehicle_fleet_manager
+#: model:ir.actions.act_window,name:vehicle_fleet_manager.act_vehiclefleetmanager_intervention_analysis_a4i
+msgid "Intervention cost analysis"
+msgstr "Analyse des coûts d’intervention"
+
+#. module: vehicle_fleet_manager
+#: model:ir.actions.act_window,name:vehicle_fleet_manager.act_vehiclefleetmanager_intervention_a4i
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_ids
+#: model:ir.ui.menu,name:vehicle_fleet_manager.vehiclefleetmanager_vehicle_intervention_menu_a4i
+#: model:ir.ui.menu,name:vehicle_fleet_manager.vehiclefleetmanager_vehicle_interventions_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_a4i
+msgid "Interventions"
+msgstr "Interventions"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_is_located
+msgid "Is located"
+msgstr "Est localisé"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/vehicle_fine.py:0,a4i.vehiclefleetmanager.vehicle.fine
+#: code:addons/vehicle_fleet_manager/models/vehicle_intervention.py:0,a4i.vehiclefleetmanager.vehicle.intervention
+#, python-format
+msgid "January"
+msgstr "Janvier"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/vehicle_fine.py:0,a4i.vehiclefleetmanager.vehicle.fine
+#: code:addons/vehicle_fleet_manager/models/vehicle_intervention.py:0,a4i.vehiclefleetmanager.vehicle.intervention
+#, python-format
+msgid "July"
+msgstr "Juillet"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/vehicle_fine.py:0,a4i.vehiclefleetmanager.vehicle.fine
+#: code:addons/vehicle_fleet_manager/models/vehicle_intervention.py:0,a4i.vehiclefleetmanager.vehicle.intervention
+#, python-format
+msgid "June"
+msgstr "Juin"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_accident_quick_create_wizard___last_update
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract___last_update
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_add_cost___last_update
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_cost___last_update
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_type___last_update
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_driver___last_update
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_fine_quick_create_wizard___last_update
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_intervention_quick_create_wizard___last_update
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_label___last_update
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle___last_update
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident___last_update
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine___last_update
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention___last_update
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_type___last_update
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_manufacturer___last_update
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer___last_update
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_update___last_update
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_quick_create_wizard___last_update
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_request_use_wizard___last_update
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_type___last_update
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_use___last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_last_odometer_value
+msgid "Last Odometer"
+msgstr "Dernier kilométrage"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_accident_quick_create_wizard_write_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_add_cost_write_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_cost_write_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_type_write_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_write_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_driver_write_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_fine_quick_create_wizard_write_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_intervention_quick_create_wizard_write_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_label_write_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_write_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_write_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_type_write_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_write_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_manufacturer_write_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_update_write_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_write_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_quick_create_wizard_write_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_request_use_wizard_write_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_type_write_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_use_write_uid
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_accident_quick_create_wizard_write_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_add_cost_write_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_cost_write_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_type_write_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_write_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_driver_write_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_fine_quick_create_wizard_write_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_intervention_quick_create_wizard_write_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_label_write_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_write_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_write_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_type_write_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_write_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_manufacturer_write_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_update_write_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_write_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_quick_create_wizard_write_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_request_use_wizard_write_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_type_write_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_use_write_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_last_geoloc_datetime
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_last_geoloc_datetime
+msgid "Last geolocation"
+msgstr "Dernière géolocalisation"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_tree_vehicletfleetmanager_vehicle_a4i
+msgid "Last odometer (Kms)"
+msgstr "Dernier kilométrage (Kms)"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_periodical_cost_last_due_date
+msgid "Last periodical due date"
+msgstr "Derniere périodicité"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_lat
+msgid "Latitude"
+msgstr "Latitude"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/vehicle.py:0,a4i.vehiclefleetmanager.vehicle
+#, python-format
+msgid "Lease with Option to Buy"
+msgstr "LOA"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_location
+msgid "Location"
+msgstr "Location"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_fine_quick_create_wizard_citation_location
+msgid "Location of the fine"
+msgstr "Lieu de contravention"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_image
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_manufacturer_logo
+msgid "Logo"
+msgstr "Logo"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/vehicle.py:0,a4i.vehiclefleetmanager.vehicle
+#, python-format
+msgid "Long-Term Lease"
+msgstr "LLD"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_lng
+msgid "Longitude"
+msgstr "Longitude"
+
+#. module: vehicle_fleet_manager
+#: model:res.groups,name:vehicle_fleet_manager.group_vehicle_fleet_vehicle_manager
+msgid "Manager"
+msgstr "Responsable"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/contract.py:0,a4i.vehiclefleetmanager.contract.cost
+#: code:addons/vehicle_fleet_manager/models/vehicle.py:0,a4i.vehiclefleetmanager.vehicle
+#, python-format
+msgid "Manual"
+msgstr "Manuel"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_update_odometer_a4i
+msgid "Manual update - vehicle odometer"
+msgstr "Mise à jour manuelle kilométrage"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model,name:vehicle_fleet_manager.model_a4i_vehiclefleetmanager_vehicle_odometer_update
+msgid "Manually update vehicle odometer"
+msgstr "Mise à jour manuelle kilométrage"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_quick_create_wizard_vehicle_manufacturer_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_vehicle_manufacturer_id
+msgid "Manufacturer"
+msgstr "Fabricant"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_manufacturer_code
+msgid "Manufacturer code"
+msgstr "Code fabricant"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_manufacturer_logo
+msgid "Manufacturer logo"
+msgstr "Logo fabricant"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_manufacturer_name
+msgid "Manufacturer name"
+msgstr "Nom fabricant"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/vehicle_fine.py:0,a4i.vehiclefleetmanager.vehicle.fine
+#: code:addons/vehicle_fleet_manager/models/vehicle_intervention.py:0,a4i.vehiclefleetmanager.vehicle.intervention
+#, python-format
+msgid "March"
+msgstr "Mars"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/vehicle_fine.py:0,a4i.vehiclefleetmanager.vehicle.fine
+#: code:addons/vehicle_fleet_manager/models/vehicle_intervention.py:0,a4i.vehiclefleetmanager.vehicle.intervention
+#, python-format
+msgid "May"
+msgstr "Mai"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_a4i
+msgid "Model infos"
+msgstr "Infos modèle"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_model_year
+msgid "Model year"
+msgstr "Année modèle"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_model_year
+msgid "Model year of the vehicle"
+msgstr "Année du véhicule"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_month
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_month
+msgid "Month"
+msgstr "Mois"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/contract.py:0,a4i.vehiclefleetmanager.contract
+#, python-format
+msgid "Monthly"
+msgstr "Mensuel"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_a4i
+msgid "Motorisation"
+msgstr "Motorisation"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_a4i
+msgid "Fiscality"
+msgstr "Fiscalité"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_accident_quick_create_wizard_name
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_cost_name
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_name
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_type_name
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_driver_name
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_fine_quick_create_wizard_name
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_intervention_quick_create_wizard_name
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_label_name
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_name
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_name
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_name
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_type_name
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_manufacturer_name
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_name
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_quick_create_wizard_name
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_type_name
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_use_name
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_use_name
+msgid "Name"
+msgstr "Nom"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_accident_quick_create_wizard___last_update
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_accident_quick_create_wizard_accident_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_accident_quick_create_wizard_accident_location
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_accident_quick_create_wizard_create_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_accident_quick_create_wizard_create_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_accident_quick_create_wizard_declaration_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_accident_quick_create_wizard_display_name
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_accident_quick_create_wizard_driver_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_accident_quick_create_wizard_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_accident_quick_create_wizard_internal_note
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_accident_quick_create_wizard_name
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_accident_quick_create_wizard_type
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_accident_quick_create_wizard_vehicle_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_accident_quick_create_wizard_write_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_accident_quick_create_wizard_write_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract___last_update
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_add_cost___last_update
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_add_cost_amount
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_add_cost_contract_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_add_cost_create_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_add_cost_create_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_add_cost_currency_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_add_cost_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_add_cost_display_name
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_add_cost_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_add_cost_write_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_add_cost_write_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_cost___last_update
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_cost_amount
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_cost_contract_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_cost_create_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_cost_create_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_cost_currency_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_cost_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_cost_display_name
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_cost_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_cost_name
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_cost_type
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_cost_write_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_cost_write_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_create_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_create_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_currency_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_display_name
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_document_ids
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_effective_cost_ids
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_internal_note
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_name
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_periodical_cost
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_periodical_cost_frequency
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_periodical_cost_last_due_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_periodical_cost_start_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_state
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_total_cost
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_type___last_update
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_type_create_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_type_create_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_type_display_name
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_type_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_type_id,a4i.vehiclefleetmanager.contract.type
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_type_name
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_type_write_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_type_write_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_vehicle_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_write_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_write_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_driver___last_update
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_driver_create_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_driver_create_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_driver_display_name
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_driver_driving_license_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_driver_driving_license_document
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_driver_first_name
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_driver_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_driver_name
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_driver_write_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_driver_write_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_fine_quick_create_wizard___last_update
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_fine_quick_create_wizard_create_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_fine_quick_create_wizard_create_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_fine_quick_create_wizard_display_name
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_fine_quick_create_wizard_driver_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_fine_quick_create_wizard_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_fine_quick_create_wizard_internal_note
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_fine_quick_create_wizard_name
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_fine_quick_create_wizard_vehicle_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_fine_quick_create_wizard_write_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_fine_quick_create_wizard_write_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_intervention_quick_create_wizard___last_update
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_intervention_quick_create_wizard_create_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_intervention_quick_create_wizard_create_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_intervention_quick_create_wizard_display_name
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_intervention_quick_create_wizard_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_intervention_quick_create_wizard_internal_note
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_intervention_quick_create_wizard_name
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_intervention_quick_create_wizard_planned_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_intervention_quick_create_wizard_type_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_intervention_quick_create_wizard_vehicle_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_intervention_quick_create_wizard_write_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_intervention_quick_create_wizard_write_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_label___last_update
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_label_create_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_label_create_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_label_display_name
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_label_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_label_name
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_label_write_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_label_write_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle___last_update
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident___last_update
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_accident_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_accident_location
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_create_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_create_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_currency_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_declaration_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_deductible_amount
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_display_name
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_document_ids
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_driver_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_expertise_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_ids
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_insurance_company
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_internal_note
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_name
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_reparation_amount
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_reparation_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_state
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_type
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_vehicle_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_write_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_write_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_acquisition_mode
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_assignation_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_assignation_type
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_assigned_driver_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_color
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_contract_ids
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_create_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_create_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_currency_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_display_name
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_document_ids
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_energy_type
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine___last_update
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_amount
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_citation_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_citation_location
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_contestation_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_create_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_create_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_currency_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_display_name
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_document_ids
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_driver_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_ids
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_internal_note
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_month
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_name
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_state
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_vehicle_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_write_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_write_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_year
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_geolocation_enabled
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_geolocation_reference
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_internal_note
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention___last_update
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_amount
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_create_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_create_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_currency_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_display_name
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_document_ids
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_ids
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_internal_note
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_month
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_name
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_planned_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_real_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_state
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_type___last_update
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_type_create_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_type_create_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_type_display_name
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_type_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_type_id,a4i.vehiclefleetmanager.vehicle.intervention.type
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_type_name
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_type_write_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_type_write_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_vehicle_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_write_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_write_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_year
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_is_located
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_lat
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_lng
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_location
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_manufacturer___last_update
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_manufacturer_create_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_manufacturer_create_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_manufacturer_display_name
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_manufacturer_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_manufacturer_write_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_manufacturer_write_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_name
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer___last_update
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_create_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_create_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_display_name
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_ids
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_internal_note
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_odometer_value
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_update___last_update
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_update_create_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_update_create_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_update_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_update_display_name
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_update_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_update_odometer_value
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_update_origin
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_update_user_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_update_vehicle_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_update_write_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_update_write_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_vehicle_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_write_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_write_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_quick_create_wizard___last_update
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_quick_create_wizard_create_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_quick_create_wizard_create_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_quick_create_wizard_display_name
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_quick_create_wizard_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_quick_create_wizard_name
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_quick_create_wizard_type_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_quick_create_wizard_vehicle_manufacturer_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_quick_create_wizard_write_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_quick_create_wizard_write_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_readed_by_api
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_request_use_wizard___last_update
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_request_use_wizard_create_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_request_use_wizard_create_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_request_use_wizard_display_name
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_request_use_wizard_driver_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_request_use_wizard_end_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_request_use_wizard_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_request_use_wizard_notes
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_request_use_wizard_start_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_request_use_wizard_vehicle_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_request_use_wizard_write_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_request_use_wizard_write_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_seats_nb
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_state
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_tag_ids
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_total_cost
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_transmission_type
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_type___last_update
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_type_create_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_type_create_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_type_display_name
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_type_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_type_id,a4i.vehiclefleetmanager.vehicle.type
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_type_name
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_type_write_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_type_write_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_use___last_update
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_use_create_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_use_create_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_use_display_name
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_use_driver_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_use_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_use_ids
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_use_notes
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_use_state
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_use_write_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_use_write_uid
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_vehicle_manufacturer_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_write_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_write_uid
+msgid "Not defined"
+msgstr "Non défini"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_accident_quick_create_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_fine_quick_create_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_accident_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_contract_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_fine_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_intervention_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_use_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_intervention_quick_create_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_vehicle_use_request_a4i
+msgid "Notes"
+msgstr "Notes"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/vehicle_fine.py:0,a4i.vehiclefleetmanager.vehicle.fine
+#: code:addons/vehicle_fleet_manager/models/vehicle_intervention.py:0,a4i.vehiclefleetmanager.vehicle.intervention
+#, python-format
+msgid "November"
+msgstr "Novembre"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_numberplate
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_quick_create_wizard_numberplate
+msgid "Numberplate"
+msgstr "Plaque d’immatriculation"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_numberplate
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_quick_create_wizard_numberplate
+msgid "Numberplate of the vehicle"
+msgstr "Plaque d’immatriculation du véhicule"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_contract_a4i
+msgid "Obsolete"
+msgstr "Obsolète"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/vehicle_fine.py:0,a4i.vehiclefleetmanager.vehicle.fine
+#: code:addons/vehicle_fleet_manager/models/vehicle_intervention.py:0,a4i.vehiclefleetmanager.vehicle.intervention
+#, python-format
+msgid "October"
+msgstr "Octobre"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_odometer
+msgid "Odometer"
+msgstr "Kilométrage"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_odometer
+msgid "Odometer at intervention"
+msgstr "Kilométrage à l’intervention"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_odometer_value
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_update_odometer_value
+msgid "Odometer value"
+msgstr "Valeur kilométrage"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_ids
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_a4i
+msgid "Odometers"
+msgstr "Kilométrages"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_a4i
+#: code:addons/vehicle_fleet_manager/models/vehicle.py:0,a4i.vehiclefleetmanager.vehicle
+#, python-format
+msgid "Ordered"
+msgstr "Commandé"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_fine_quick_create_a4i
+msgid "Origin"
+msgstr "Origine"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/vehicle.py:0,a4i.vehiclefleetmanager.vehicle
+#: code:addons/vehicle_fleet_manager/models/vehicle_accident.py:0,a4i.vehiclefleetmanager.vehicle.accident
+#: code:addons/vehicle_fleet_manager/wizards/accident_quick_create.py:0,a4i.vehiclefleetmanager.accident.quick.create.wizard
+#, python-format
+msgid "Other"
+msgstr "Autre"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_a4i
+#: code:addons/vehicle_fleet_manager/models/vehicle.py:0,a4i.vehiclefleetmanager.vehicle
+#, python-format
+msgid "Out service"
+msgstr "Hors service"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_fine_a4i
+#: code:addons/vehicle_fleet_manager/models/vehicle_fine.py:0,a4i.vehiclefleetmanager.vehicle.fine
+#, python-format
+msgid "Paid"
+msgstr "Payé"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_intervention_quick_create_wizard_supplier_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_supplier_id
+msgid "Partner who maintened the vehicle"
+msgstr "Fournisseur en charge de la maintenance"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_vendor_id
+msgid "Partner who sell the contract"
+msgstr "Partenaire vendeur"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_vendor_id
+msgid "Partner who sell the vehicle"
+msgstr "Partenaire qui à vendu le véhicule"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/vehicle_fine.py:0,a4i.vehiclefleetmanager.vehicle.fine
+#, python-format
+msgid "Pending payment"
+msgstr "En attente paiement"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/contract.py:0,a4i.vehiclefleetmanager.contract.cost
+#, python-format
+msgid "Periodic"
+msgstr "Périodique"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_periodical_cost
+msgid "Periodical cost"
+msgstr "Coût périodique"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_periodical_cost_start_date
+msgid "Periodical cost start date"
+msgstr "Date début coût périodique"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_contract_a4i
+msgid "Periodical costs"
+msgstr "Coûts périodiques"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_intervention_a4i
+#: code:addons/vehicle_fleet_manager/models/vehicle_intervention.py:0,a4i.vehiclefleetmanager.vehicle.intervention
+#, python-format
+msgid "Planned"
+msgstr "Planifié"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_intervention_quick_create_wizard_planned_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_planned_date
+msgid "Planned intervention date"
+msgstr "Date d’intervention planifiée"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_intervention_a4i
+msgid "Planning"
+msgstr "Planning"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/vehicle.py:0,a4i.vehiclefleetmanager.vehicle
+#, python-format
+msgid "Plug-in hybrid"
+msgstr "Hybride rechargeable"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/vehicle.py:0,a4i.vehiclefleetmanager.vehicle
+#, python-format
+msgid "Purchase"
+msgstr "Achat"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_purchase_cost
+msgid "Purchase cost"
+msgstr "Coût d’achat"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/contract.py:0,a4i.vehiclefleetmanager.contract
+#, python-format
+msgid "Quarterly"
+msgstr "Trimestriel"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.menu,name:vehicle_fleet_manager.vehiclefleetmanager_add_accident_menu_a4i
+msgid "Quick create of accident"
+msgstr "Création rapide de sinistre"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.menu,name:vehicle_fleet_manager.vehiclefleetmanager_add_fine_menu_a4i
+msgid "Quick create of fine"
+msgstr "Création rapide de contravention"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.menu,name:vehicle_fleet_manager.vehiclefleetmanager_add_intervention_menu_a4i
+msgid "Quick create of intervention"
+msgstr "Création rapide d’intervention"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.menu,name:vehicle_fleet_manager.vehiclefleetmanager_add_vehicle_menu_a4i
+msgid "Quick create of vehicle"
+msgstr "Création rapide de véhicule"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.menu,name:vehicle_fleet_manager.vehiclefleetmanager_use_request_menu_a4i
+msgid "Quick use request"
+msgstr "Créer une demande d’utilisation"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_readed_by_api
+msgid "Readed by the api"
+msgstr "Lu par l’API"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_real_date
+msgid "Real intervention date"
+msgstr "Date d’intervention réelle"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_fine_a4i
+#: code:addons/vehicle_fleet_manager/models/vehicle_fine.py:0,a4i.vehiclefleetmanager.vehicle.fine
+#, python-format
+msgid "Received"
+msgstr "Reçu"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_contract_reference
+msgid "Reference of the contract"
+msgstr "Référence contrat"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_quick_create_wizard_registration_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_registration_date
+msgid "Registration date"
+msgstr "Date d’enregistrement"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_use_a4i
+msgid "Reject"
+msgstr "Refus"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/vehicle_use.py:0,a4i.vehiclefleetmanager.vehicle.use
+#, python-format
+msgid "Rejected"
+msgstr "Refusé"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_reparation_amount
+msgid "Reparation amount"
+msgstr "Montant réparation"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_reparation_date
+msgid "Reparation date"
+msgstr "Date de réparation"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_accident_a4i
+msgid "Reparations"
+msgstr "Réparations"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_use_a4i
+msgid "Request"
+msgstr "Requête"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model,name:vehicle_fleet_manager.model_a4i_vehiclefleetmanager_vehicle_request_use_wizard
+msgid "Request a vehicle use"
+msgstr "Demander l’usage d’un véhicule"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_use_request_creation_date
+msgid "Request date"
+msgstr "Date de demande"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_a4i
+msgid "Request use"
+msgstr "Demande d'utilisation"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_intervention_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_a4i
+#: code:addons/vehicle_fleet_manager/models/vehicle.py:0,a4i.vehiclefleetmanager.vehicle
+#: code:addons/vehicle_fleet_manager/models/vehicle_intervention.py:0,a4i.vehiclefleetmanager.vehicle.intervention
+#: code:addons/vehicle_fleet_manager/models/vehicle_use.py:0,a4i.vehiclefleetmanager.vehicle.use
+#, python-format
+msgid "Requested"
+msgstr "Demandé"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_responsible_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_quick_create_wizard_responsible_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_responsible_id
+msgid "Responsible"
+msgstr "Responsable"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_responsible_id
+msgid "Responsible of the contract"
+msgstr "Responsable du contrat"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_quick_create_wizard_responsible_id
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_responsible_id
+msgid "Responsible of the vehicle"
+msgstr "Responsable du véhicule"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_seats_nb
+msgid "Seats nb"
+msgstr "Nombre sièges"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/vehicle_fine.py:0,a4i.vehiclefleetmanager.vehicle.fine
+#: code:addons/vehicle_fleet_manager/models/vehicle_intervention.py:0,a4i.vehiclefleetmanager.vehicle.intervention
+#, python-format
+msgid "September"
+msgstr "Septembre"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/vehicle.py:0,a4i.vehiclefleetmanager.vehicle
+#, python-format
+msgid "Sequential"
+msgstr "Séquentiel"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_a4i
+msgid "Show accidents"
+msgstr "Voir les sinistres"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_a4i
+msgid "Show contracts"
+msgstr "Voir les contrats"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_contract_a4i
+msgid "Show effective costs"
+msgstr "Voir coûts effectifs"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_a4i
+msgid "Show fines"
+msgstr "Voir les contraventions"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_a4i
+msgid "Show interventions"
+msgstr "Voir les interventions"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_a4i
+msgid "Show uses"
+msgstr "Voir les utilisations"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/vehicle.py:0,a4i.vehiclefleetmanager.vehicle
+#, python-format
+msgid "Song-Term Rental"
+msgstr "Location courte durée"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_start_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_request_use_wizard_start_date
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_use_start_date
+msgid "Start date"
+msgstr "Date de début"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_start_date
+msgid "Start date of the contract"
+msgstr "Date de début du contrat"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_use_start_date
+msgid "Start date of the use"
+msgstr "Date de début utilisation"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_start_odometer_vehicle
+msgid "Start odometer of the vehicle"
+msgstr "Kilométrage de départ du véhicule"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_state
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_state
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_state
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_state
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_state
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_use_state
+msgid "State"
+msgstr "État"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_intervention_quick_create_wizard_supplier_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_supplier_id
+msgid "Supplier"
+msgstr "Fournisseur"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_tag_ids
+msgid "Tags"
+msgstr "Tags"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/vehicle_accident.py:0,a4i.vehiclefleetmanager.vehicle.accident
+#: code:addons/vehicle_fleet_manager/wizards/accident_quick_create.py:0,a4i.vehiclefleetmanager.accident.quick.create.wizard
+#, python-format
+msgid "Theft"
+msgstr "Vol"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_contract_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_tree_vehicletfleetmanager_contract_cost_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_tree_vehicletfleetmanager_vehicle_a4i
+msgid "Total"
+msgstr "Total"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_total_cost
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_total_cost
+msgid "Total cost"
+msgstr "Coût total"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_contract_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_a4i
+msgid "Total costs"
+msgstr "Total des coûts"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_transmission_type
+msgid "Transmission"
+msgstr "Transmission"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_accident_quick_create_wizard_type
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_type_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_intervention_quick_create_wizard_type_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_type
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_type_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_quick_create_wizard_type_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_type_id
+msgid "Type"
+msgstr "Type"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/vehicle_accident.py:0,a4i.vehiclefleetmanager.vehicle.accident
+#, python-format
+msgid "Under reparation"
+msgstr "En réparation"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_update_user_id
+msgid "Update by"
+msgstr "Mis à jour par"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_update_date
+msgid "Update date"
+msgstr "Mis à jour le "
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_update_odometer_a4i
+msgid "Update odometer"
+msgstr "Mise à jour kilométrage"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_a4i
+msgid "Update odometer manually"
+msgstr "Mettre à jour le kilométrage"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_update_origin
+msgid "Update origin"
+msgstr "Origine de la mise à jour"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/vehicle.py:0,a4i.vehiclefleetmanager.vehicle
+#, python-format
+msgid "Update vehicle odometer"
+msgstr "Mettre à jour le kilométrage du véhicule"
+
+#. module: vehicle_fleet_manager
+#: model:res.groups,name:vehicle_fleet_manager.group_vehicle_fleet_vehicle_user
+msgid "User"
+msgstr "Utilisateur"
+
+#. module: vehicle_fleet_manager
+#: model:ir.actions.act_window,name:vehicle_fleet_manager.act_vehiclefleetmanager_use_a4i
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_use_ids
+#: model:ir.ui.menu,name:vehicle_fleet_manager.vehiclefleetmanager_uses_menu_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_a4i
+msgid "Uses"
+msgstr "Utilisations"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/vehicle.py:0,a4i.vehiclefleetmanager.vehicle
+#: code:addons/vehicle_fleet_manager/models/vehicle_intervention.py:0,a4i.vehiclefleetmanager.vehicle.intervention
+#, python-format
+msgid "Variable"
+msgstr "Variable"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_accident_quick_create_wizard_vehicle_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_vehicle_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_fine_quick_create_wizard_vehicle_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_intervention_quick_create_wizard_vehicle_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_accident_vehicle_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_vehicle_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_vehicle_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_update_vehicle_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_odometer_vehicle_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_request_use_wizard_vehicle_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_use_vehicle_id
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_intervention_quick_create_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_vehicle_quick_create_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_vehicle_use_request_a4i
+msgid "Vehicle"
+msgstr "Véhicule"
+
+#. module: vehicle_fleet_manager
+#: model:ir.actions.act_window,name:vehicle_fleet_manager.act_vehiclefleetmanager_vehicle_quick_create_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_vehicle_quick_create_a4i
+msgid "Vehicle - quick create"
+msgstr "Création rapide de véhicule"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model,name:vehicle_fleet_manager.model_a4i_vehiclefleetmanager_vehicle_quick_create_wizard
+msgid "Vehicle - quick creation"
+msgstr "Création rapide de véhicule"
+
+#. module: vehicle_fleet_manager
+#: model:ir.actions.act_window,name:vehicle_fleet_manager.act_vehiclefleetmanager_vehicle_quick_use_request
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_vehicle_use_request_a4i
+msgid "Vehicle - quick use request"
+msgstr "Création rapide de demande d’utilisaton"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_accident_quick_create_a4i
+msgid "Vehicle and driver"
+msgstr "Véhicule et conducteur"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_graph_vehicletfleetmanager_fine_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_pivot_vehicletfleetmanager_fine_a4i
+msgid "Vehicle fines analysis"
+msgstr "Analyse des contraventions"
+
+#. module: vehicle_fleet_manager
+#: model:ir.module.category,name:vehicle_fleet_manager.group_root_vehicle_fleet_vehicle
+#: model:ir.ui.menu,name:vehicle_fleet_manager.vehiclefleetmanager_root_menu_a4i
+msgid "Vehicle fleet manager"
+msgstr "Flotte automobile"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_tree_vehicletfleetmanager_use_a4i
+msgid "Vehicle fleet manager - Uses"
+msgstr "Gestion de flotte automobile - utilisations"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_tree_vehicletfleetmanager_vehicle_a4i
+msgid "Vehicle fleet manager - vehicles"
+msgstr "Gestion de flotte automobile - véhicules"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_graph_vehicletfleetmanager_intervention_a4i
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_pivot_vehicletfleetmanager_intervention_a4i
+msgid "Vehicle interventions cost analysis"
+msgstr "Analyse des coûts d’intervention"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.menu,name:vehicle_fleet_manager.vehiclefleetmanager_config_vehicle_manufacturers_menu_a4i
+msgid "Vehicle manufacturers"
+msgstr "Fabricants"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_use_vehicle_id
+msgid "Vehicle used"
+msgstr "Véhicule utilisé"
+
+#. module: vehicle_fleet_manager
+#: model:ir.actions.act_window,name:vehicle_fleet_manager.act_vehiclefleetmanager_vehicle_a4i
+#: model:ir.ui.menu,name:vehicle_fleet_manager.vehiclefleetmanager_vehicle_menu_a4i
+#: model:ir.ui.menu,name:vehicle_fleet_manager.vehiclefleetmanager_vehicles_menu_a4i
+msgid "Vehicles"
+msgstr "Vehicules"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_vendor_id
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_vendor_id
+msgid "Vendor"
+msgstr "Vendeur"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_contract_a4i
+#: code:addons/vehicle_fleet_manager/models/contract.py:0,a4i.vehiclefleetmanager.contract
+#, python-format
+msgid "Waiting"
+msgstr "En attente"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_fine_a4i
+msgid "Waiting payment"
+msgstr "En attente paiement"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/vehicle_accident.py:0,a4i.vehiclefleetmanager.vehicle.accident
+#: code:addons/vehicle_fleet_manager/wizards/accident_quick_create.py:0,a4i.vehiclefleetmanager.accident.quick.create.wizard
+#, python-format
+msgid "Weather damage"
+msgstr "Dommage météorologique"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/contract.py:0,a4i.vehiclefleetmanager.contract
+#, python-format
+msgid "Weekly"
+msgstr "Hebdomadaire"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_fine_year
+#: model:ir.model.fields,field_description:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_intervention_year
+msgid "Year"
+msgstr "Année"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/wizards/contract_add_cost.py:0,a4i.vehiclefleetmanager.contract.add.cost
+#, python-format
+msgid "You must specify a contract"
+msgstr "Vous devez spécifier un contrat"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/wizards/vehicle_odometer_update.py:0,a4i.vehiclefleetmanager.vehicle.odometer.update
+#, python-format
+msgid "You must specify a vehicle"
+msgstr "Vous devez spécifier un véhicule"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model,name:vehicle_fleet_manager.model_a4i_vehiclefleetmanager_contract
+msgid "a4i.vehiclefleetmanager.contract"
+msgstr "a4i.vehiclefleetmanager.contract"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model,name:vehicle_fleet_manager.model_a4i_vehiclefleetmanager_contract_cost
+msgid "a4i.vehiclefleetmanager.contract.cost"
+msgstr "a4i.vehiclefleetmanager.contract.cost"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model,name:vehicle_fleet_manager.model_a4i_vehiclefleetmanager_contract_type
+msgid "a4i.vehiclefleetmanager.contract.type"
+msgstr "a4i.vehiclefleetmanager.contract.type"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model,name:vehicle_fleet_manager.model_a4i_vehiclefleetmanager_driver
+msgid "a4i.vehiclefleetmanager.driver"
+msgstr "a4i.vehiclefleetmanager.driver"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model,name:vehicle_fleet_manager.model_a4i_vehiclefleetmanager_label
+msgid "a4i.vehiclefleetmanager.label"
+msgstr "a4i.vehiclefleetmanager.label"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model,name:vehicle_fleet_manager.model_a4i_vehiclefleetmanager_vehicle
+msgid "a4i.vehiclefleetmanager.vehicle"
+msgstr "a4i.vehiclefleetmanager.vehicle"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model,name:vehicle_fleet_manager.model_a4i_vehiclefleetmanager_vehicle_accident
+msgid "a4i.vehiclefleetmanager.vehicle.accident"
+msgstr "a4i.vehiclefleetmanager.vehicle.accident"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model,name:vehicle_fleet_manager.model_a4i_vehiclefleetmanager_vehicle_fine
+msgid "a4i.vehiclefleetmanager.vehicle.fine"
+msgstr "a4i.vehiclefleetmanager.vehicle.fine"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model,name:vehicle_fleet_manager.model_a4i_vehiclefleetmanager_vehicle_intervention
+msgid "a4i.vehiclefleetmanager.vehicle.intervention"
+msgstr "a4i.vehiclefleetmanager.vehicle.intervention"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model,name:vehicle_fleet_manager.model_a4i_vehiclefleetmanager_vehicle_intervention_type
+msgid "a4i.vehiclefleetmanager.vehicle.intervention.type"
+msgstr "a4i.vehiclefleetmanager.vehicle.intervention.type"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model,name:vehicle_fleet_manager.model_a4i_vehiclefleetmanager_vehicle_manufacturer
+msgid "a4i.vehiclefleetmanager.vehicle.manufacturer"
+msgstr "a4i.vehiclefleetmanager.vehicle.manufacturer"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model,name:vehicle_fleet_manager.model_a4i_vehiclefleetmanager_vehicle_odometer
+msgid "a4i.vehiclefleetmanager.vehicle.odometer"
+msgstr "a4i.vehiclefleetmanager.vehicle.odometer"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model,name:vehicle_fleet_manager.model_a4i_vehiclefleetmanager_vehicle_type
+msgid "a4i.vehiclefleetmanager.vehicle.type"
+msgstr "a4i.vehiclefleetmanager.vehicle.type"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model,name:vehicle_fleet_manager.model_a4i_vehiclefleetmanager_vehicle_use
+msgid "a4i.vehiclefleetmanager.vehicle.use"
+msgstr "a4i.vehiclefleetmanager.vehicle.use"
+
+#. module: vehicle_fleet_manager
+#: code:addons/vehicle_fleet_manager/models/vehicle.py:0,a4i.vehiclefleetmanager.vehicle
+#, python-format
+msgid "hybrid"
+msgstr "Hybride"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_last_odometer_value
+msgid "odometer of the vehicle"
+msgstr "Kilométrage du véhicule"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_contract_start_odometer_vehicle
+msgid "odometer of the vehicle at contract start"
+msgstr "Kilométrage du véhicule au démarrage du contrat"
+
+#. module: vehicle_fleet_manager
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_quick_create_wizard_registration_date
+#: model:ir.model.fields,help:vehicle_fleet_manager.field_a4i_vehiclefleetmanager_vehicle_registration_date
+msgid "registration date of the vehicle"
+msgstr "Date de 1ère immatriculation"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_accident_a4i
+msgid "vehicle fleet manager - Accident"
+msgstr "vehicle fleet manager - Accident"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_tree_vehicletfleetmanager_accident_a4i
+msgid "vehicle fleet manager - Accidents"
+msgstr "vehicle fleet manager - Accidents"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_contract_a4i
+msgid "vehicle fleet manager - Contract"
+msgstr "vehicle fleet manager - Contract"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_contract_cost_a4i
+msgid "vehicle fleet manager - Contract cost"
+msgstr "vehicle fleet manager - Contract cost"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_tree_vehicletfleetmanager_contract_cost_a4i
+msgid "vehicle fleet manager - Contract costs"
+msgstr "vehicle fleet manager - Contract costs"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_tree_vehicletfleetmanager_contract_a4i
+msgid "vehicle fleet manager - Contracts"
+msgstr "vehicle fleet manager - Contracts"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_fine_a4i
+msgid "vehicle fleet manager - Fine"
+msgstr "vehicle fleet manager - Fine"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_tree_vehicletfleetmanager_fine_a4i
+msgid "vehicle fleet manager - Fines"
+msgstr "vehicle fleet manager - Fines"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_intervention_a4i
+msgid "vehicle fleet manager - Intervention"
+msgstr "vehicle fleet manager - Intervention"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_tree_vehicletfleetmanager_intervention_a4i
+msgid "vehicle fleet manager - Interventions"
+msgstr "vehicle fleet manager - Interventions"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_use_a4i
+msgid "vehicle fleet manager - Use"
+msgstr "vehicle fleet manager - Use"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_a4i
+msgid "vehicle fleet manager - vehicle"
+msgstr "vehicle fleet manager - vehicle"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_manufacturer_a4i
+msgid "vehicle fleet manager - vehicle manufacturer"
+msgstr "vehicle fleet manager - vehicle manufacturer"
+
+#. module: vehicle_fleet_manager
+#: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_tree_vehicletfleetmanager_vehicle_manufacturer_a4i
+msgid "vehicle fleet manager - vehicle manufacturers"
+msgstr "vehicle fleet manager - vehicle manufacturers"
+
+#. module: vehicle_fleet_manager
+#: model:ir.actions.act_window,name:vehicle_fleet_manager.act_vehiclefleetmanager_vehicle_manufacturer_a4i
+msgid "vehicle manufacturers"
+msgstr "Fabricants automobile"
+

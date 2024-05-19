@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+	<data>
+
+		<!-- Menu items -->
+		<menuitem name="Contracts" id="administrative_contract_menu_a4i" parent="base_openprod.menu_desk_main" sequence="40" groups="group_administrative_contract_user"/>
+		<menuitem name="Quick creation" id="administrative_contract_quick_create_a4i" parent="administrative_contract_menu_a4i" action="act_administrative_contract_quick_create_a4i" sequence="10"/>
+		<menuitem name="Contracts" id="administrative_contract_a4i" parent="administrative_contract_menu_a4i" action="act_contract_administrative_a4i" sequence="20"/>
+		<menuitem name="Analysis" id="administrative_contract_analysis_a4i" parent="administrative_contract_menu_a4i" action="act_contract_administrative_analysis_a4i" sequence="30"/>
+
+	</data>
+</openerp>

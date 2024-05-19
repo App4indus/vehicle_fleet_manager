@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+
+		<!-- ACTION accident quick create Wizard -->
+		<record id="act_vehiclefleetmanager_accident_quick_create_a4i" model="ir.actions.act_window">
+		    <field name="name">Accident - quick create</field>
+		    <field name="res_model">a4i.vehiclefleetmanager.accident.quick.create.wizard</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">form</field>
+		    <field name="target">new</field>
+		</record>
+
+		<!-- FORM VIEW accident quick create Wizard -->
+		<record model="ir.ui.view" id="view_accident_quick_create_a4i">
+			<field name="name">view_accident_quick_create_a4i</field>
+			<field name="model">a4i.vehiclefleetmanager.accident.quick.create.wizard</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Accident - quick create">
+
+                    <group colspan="4" col="4" name="accident" string="Accident">
+						<field name="type"/>
+						<field name="accident_date"/>
+						<field name="accident_location"/>
+						<field name="declaration_date"/>
+						<field name="name" invisible="1"/>
+					</group>
+
+					<group colspan="4" col="4" name="vehicle_driver" string="Vehicle and driver">
+						<field name="vehicle_id"/>
+						<field name="driver_id"/>
+					</group>
+
+                    <group colspan="4" col="4" name="note" string="Notes">
+						<field name="internal_note" nolabel="1"/>
+					</group>
+
+					<footer>
+						<button name="create_accident" string="Create accident" type="object" class="oe_highlight"/>
+						<button string="Cancel" class="oe_link" special="cancel" />
+					</footer>
+				</form>
+			</field>
+		</record>
+	</data>
+
+</openerp>

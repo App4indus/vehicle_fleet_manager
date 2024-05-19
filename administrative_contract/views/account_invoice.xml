@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+	<data>
+
+		<!-- TREE VIEW ACCOUNT INVOICE -->
+		<record id='view_tree_account_invoice_contract_a4i' model='ir.ui.view'>
+            <field name="name">view_tree_account_invoice_contract_a4i</field>
+            <field name="model">account.invoice</field>
+			<field name="inherit_id" ref= "account_openprod.invoice_tree"/>
+			<field name="priority" eval="5000"/>
+            <field name="arch" type="xml">
+				<!-- add contract column -->
+				<xpath expr="//field[@name='number']" position="after">
+					<field name="x_administrative_contract"/>
+				</xpath>
+			</field>
+		</record>
+
+		<!-- FORM VIEW ACCOUNT INVOICE SUPPLIER -->
+		<record id='view_form_account_invoice_contract_a4i' model='ir.ui.view'>
+            <field name="name">view_form_account_invoice_contract_a4i</field>
+            <field name="model">account.invoice</field>
+			<field name="inherit_id" ref= "account_openprod.account_supp_openprod_invoice_form"/>
+			<field name="priority" eval="5000"/>
+            <field name="arch" type="xml">
+
+				<!-- add contract column -->
+				<xpath expr="//field[@name='origin']" position="after">
+					<field name="x_administrative_contract" domain="[('partner_id', '=', partner_id)]"/>
+				</xpath>
+
+            </field>
+		</record>
+
+	</data>
+</openerp>
+

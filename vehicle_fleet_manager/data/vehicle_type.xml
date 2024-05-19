@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <!-- Static data for a4i.vehiclefleetmanager.vehicle.type model -->
+        <record model="a4i.vehiclefleetmanager.vehicle.type" id="vehicle_type_1">
+            <field name="name">Car</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.type" id="vehicle_type_2">
+            <field name="name">Van</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.type" id="vehicle_type_3">
+            <field name="name">Truck</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.type" id="vehicle_type_4">
+            <field name="name">Two-wheeler</field>
+        </record>
+
+    </data>
+</openerp>

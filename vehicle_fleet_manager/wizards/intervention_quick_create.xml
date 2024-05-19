@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+
+		<!-- ACTION intervention quick create Wizard -->
+		<record id="act_vehiclefleetmanager_intervention_quick_create_a4i" model="ir.actions.act_window">
+		    <field name="name">Intervention - quick create</field>
+		    <field name="res_model">a4i.vehiclefleetmanager.intervention.quick.create.wizard</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">form</field>
+		    <field name="target">new</field>
+		</record>
+
+		<!-- FORM VIEW intervention quick create Wizard -->
+		<record model="ir.ui.view" id="view_intervention_quick_create_a4i">
+			<field name="name">view_intervention_quick_create_a4i</field>
+			<field name="model">a4i.vehiclefleetmanager.intervention.quick.create.wizard</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Intervention - quick create">
+
+                    <group colspan="4" col="4" name="intervention" string="Intervention">
+						<field name="type_id"/>
+						<field name="supplier_id"/>
+						<field name="planned_date"/>
+						<field name="name" invisible="1"/>
+					</group>
+
+					<group colspan="4" col="4" name="vehicle" string="Vehicle">
+						<field name="vehicle_id"/>
+					</group>
+
+                    <group colspan="4" col="4" name="note" string="Notes">
+						<field name="internal_note" nolabel="1"/>
+					</group>
+
+					<footer>
+						<button name="create_intervention" string="Create intervention" type="object" class="oe_highlight"/>
+						<button string="Cancel" class="oe_link" special="cancel" />
+					</footer>
+				</form>
+			</field>
+		</record>
+	</data>
+
+</openerp>

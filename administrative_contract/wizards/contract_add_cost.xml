@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+
+		<!-- FORM VIEW add manual contract cost Wizard -->
+		<record model="ir.ui.view" id="view_add_contract_cost_a4i">
+			<field name="name">view_add_contract_cost_a4i</field>
+			<field name="model">4i.contract.administrative.cost</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Add a manual contract cost">
+					<group name='contract' string='Contract' colspan="4" col="4">
+						<field name="contract_id" readonly="1"/>
+					</group>
+
+					<group name='cost' string='Cost' colspan="4" col="6">
+						<field name="date" required="1"/>
+						<field name="amount" required="1" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+						<field name="currency_id" required="1"/>
+
+					</group>
+
+					<footer>
+						<button name="add_cost" string="Add cost" type="object" class="oe_highlight"/>
+						<button string="Cancel" class="oe_link" special="cancel" />
+					</footer>
+				</form>
+			</field>
+		</record>
+	</data>
+
+</openerp>

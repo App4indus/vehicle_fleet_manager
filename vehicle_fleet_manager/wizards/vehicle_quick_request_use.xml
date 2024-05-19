@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+
+		<!-- ACTION vehicle quick use request -->
+		<record id="act_vehiclefleetmanager_vehicle_quick_use_request" model="ir.actions.act_window">
+		    <field name="name">Vehicle - quick use request</field>
+		    <field name="res_model">a4i.vehiclefleetmanager.vehicle.request.use.wizard</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">form</field>
+		    <field name="target">new</field>
+		</record>
+
+		<!-- FORM VIEW vehicle quick use request wizard -->
+		<record model="ir.ui.view" id="view_vehicle_use_request_a4i">
+			<field name="name">view_vehicle_use_request_a4i</field>
+			<field name="model">a4i.vehiclefleetmanager.vehicle.request.use.wizard</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Vehicle - quick use request">
+					<group col="8">
+						<group colspan="4" col="4" name="vehicle" string="Vehicle">
+							<field name="vehicle_id"/>
+						</group>
+
+						<group colspan="4" col="4" name="driver" string="Driver">
+							<field name="driver_id" required="1"/>
+						</group>
+					</group>
+
+					<group colspan="4" col="4" name="planning" string="Dates">
+						<field name="start_date" required="1"/>
+						<field name="end_date"/>
+					</group>
+
+					<group colspan="4" col="4" name="notes" string="Notes">
+						<field name="notes"/>
+					</group>
+
+					<footer>
+						<button name="create_request" string="Create request" type="object" class="oe_highlight"/>
+						<button string="Cancel" class="oe_link" special="cancel" />
+					</footer>
+				</form>
+			</field>
+		</record>
+	</data>
+
+</openerp>

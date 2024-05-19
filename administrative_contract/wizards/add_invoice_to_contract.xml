@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+
+		<!-- FORM VIEW add invoice to contract Wizard -->
+		<record model="ir.ui.view" id="wiz_add_invoice_to_contract_a4i">
+			<field name="name">wiz_add_invoice_to_contract_a4i</field>
+			<field name="model">a4i.administrative.contract.invoice.add</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Add invoices to contract">
+					<group name='contract' string='Contract' colspan="4" col="6">
+						<field name="contract_id" readonly="1"/>
+						<field name="amount_filter"/>
+						<field name="expected_amount" attrs="{'readonly': 1, 'invisible': [('amount_filter', '=', False)]}"/>
+					</group>
+
+					<group name='invoices' string='Invoices' colspan="4" col="4">
+						<button name="button_delete_lines" string="Delete lines" type="object" class="oe_highlight" icon="fa-trash" colspan="4" attrs="{'invisible':[('account_invoice_ids', '=', [])]}"/>
+						<field name="account_invoice_ids" nolabel="1" domain="[('type', '=', 'in_invoice'), ('amount_untaxed', '=', expected_amount), ('x_administrative_contract', '=', False)]"/>
+					</group>
+
+					<footer>
+						<button name="validate" string="Validate" type="object" class="oe_highlight"/>
+						<button string="Cancel" class="oe_link" special="cancel" />
+					</footer>
+				</form>
+			</field>
+		</record>
+	</data>
+
+</openerp>

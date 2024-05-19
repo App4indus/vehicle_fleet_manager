@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <!-- Static data for a4i.vehiclefleetmanager.vehicle.manfacturer model -->
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_1">
+            <field name="name">Peugeot</field>
+            <field name="code">peugeot</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_2">
+            <field name="name">Renault</field>
+            <field name="code">renault</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_3">
+            <field name="name">Audi</field>
+            <field name="code">audi</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_4">
+            <field name="name">BMW</field>
+            <field name="code">bmw</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_5">
+            <field name="name">Chevrolet</field>
+            <field name="code">chevrolet</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_6">
+            <field name="name">Citroen</field>
+            <field name="code">citroen</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_7">
+            <field name="name">Dacia</field>
+            <field name="code">dacia</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_8">
+            <field name="name">Daewoo</field>
+            <field name="code">daewoo</field>
+        </record>
+
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_9">
+            <field name="name">Fiat</field>
+            <field name="code">fiat</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_10">
+            <field name="name">Ford</field>
+            <field name="code">ford</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_11">
+            <field name="name">Ferrari</field>
+            <field name="code">ferrari</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_12">
+            <field name="name">Franklin</field>
+            <field name="code">franklin</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_13">
+            <field name="name">Honda</field>
+            <field name="code">honda</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_14">
+            <field name="name">Hyundai</field>
+            <field name="code">hyundai</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_15">
+            <field name="name">Isuzu</field>
+            <field name="code">isuzu</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_16">
+            <field name="name">Iveco</field>
+            <field name="code">iveco</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_17">
+            <field name="name">Jaguar</field>
+            <field name="code">jaguar</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_18">
+            <field name="name">Jeep</field>
+            <field name="code">jeep</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_19">
+            <field name="name">Lamborghini</field>
+            <field name="code">lamborghini</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_20">
+            <field name="name">Lada</field>
+            <field name="code">lada</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_21">
+            <field name="name">Lancia</field>
+            <field name="code">lancia</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_22">
+            <field name="name">Land-rover</field>
+            <field name="code">land-rover</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_23">
+            <field name="name">Lexus</field>
+            <field name="code">lexus</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_24">
+            <field name="name">Maserati</field>
+            <field name="code">maserati</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_25">
+            <field name="name">Mazda</field>
+            <field name="code">mazda</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_26">
+            <field name="name">McLaren</field>
+            <field name="code">mclaren</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_27">
+            <field name="name">Mercedes AMG</field>
+            <field name="code">mercedes-amg</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_28">
+            <field name="name">Mercedes Benz</field>
+            <field name="code">mercedes-benz</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_29">
+            <field name="name">MG</field>
+            <field name="code">mg</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_30">
+            <field name="name">Mini</field>
+            <field name="code">mini</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_31">
+            <field name="name">Mitsubishi</field>
+            <field name="code">mitsubishi</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_32">
+            <field name="name">Nissan</field>
+            <field name="code">nissan</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_32">
+            <field name="name">Opel</field>
+            <field name="code">opel</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_33">
+            <field name="name">Porsche</field>
+            <field name="code">porsche</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_34">
+            <field name="name">Saab</field>
+            <field name="code">saab</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_35">
+            <field name="name">Seat</field>
+            <field name="code">seat</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_36">
+            <field name="name">Skoda</field>
+            <field name="code">skoda</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_37">
+            <field name="name">Smart</field>
+            <field name="code">smart</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_38">
+            <field name="name">Subaru</field>
+            <field name="code">subaru</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_39">
+            <field name="name">Suziki</field>
+            <field name="code">suziki</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_40">
+            <field name="name">Tesla</field>
+            <field name="code">tesla</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_41">
+            <field name="name">Triumph</field>
+            <field name="code">triumph</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_42">
+            <field name="name">Volkswagen</field>
+            <field name="code">volkswagen</field>
+        </record>
+
+        <record model="a4i.vehiclefleetmanager.vehicle.manufacturer" id="vehicle_manufacturer_43">
+            <field name="name">Volvo</field>
+            <field name="code">volvo</field>
+        </record>
+
+        <function model="a4i.vehiclefleetmanager.vehicle.manufacturer" name="post_picture" id="vehicle_manufacturerimportlogo">
+
+        </function>
+
+
+
+
+    </data>
+</openerp>

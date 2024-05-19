@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <!-- Static data (examples) for a4i.administrative.contract.type model -->
+        <record model="a4i.administrative.contract.type" id="contract_type_1">
+            <field name="name">Insurance contract</field>
+        </record>
+
+        <record model="a4i.administrative.contract.type" id="contract_type_2">
+            <field name="name">Leasing contract</field>
+        </record>
+    </data>
+</openerp>

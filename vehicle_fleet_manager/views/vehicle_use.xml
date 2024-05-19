@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+	<data>
+
+		<!-- ACTION Use -->
+		<record id="act_vehiclefleetmanager_use_a4i" model="ir.actions.act_window">
+		    <field name="name">Uses</field>
+		    <field name="res_model">a4i.vehiclefleetmanager.vehicle.use</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form,calendar</field>
+		</record>
+
+
+        <!-- TREE VIEW Uses -->
+		<record id='view_tree_vehicletfleetmanager_use_a4i' model='ir.ui.view'>
+            <field name="name">view_tree_vehicletfleetmanager_use_a4i</field>
+            <field name="model">a4i.vehiclefleetmanager.vehicle.use</field>
+            <field name="arch" type="xml">
+                <tree string="Vehicle fleet manager - Uses">
+                    <field name="name"/>
+                    <field name="vehicle_id"/>
+                    <field name="driver_id" />
+                    <field name="start_date"/>
+                    <field name="end_date"/>
+                    <field name="state" widget="char_tag" tag_colors="#2196F3: state == 'requested'; #F44336: state == 'rejected'; #4caf50: state == 'accepted'; #FFC107: state == 'cancel'; #90a4ae: state == 'done'" />
+                </tree>
+            </field>
+        </record>
+
+        <!-- CALENDAR VIEW Uses -->
+		<record id='view_calendar_vehicletfleetmanager_use_a4i' model='ir.ui.view'>
+            <field name="name">view_calendar_vehicletfleetmanager_use_a4i</field>
+            <field name="model">a4i.vehiclefleetmanager.vehicle.use</field>
+            <field name="arch" type="xml">
+				<calendar date_start = "start_date" date_stop = "end_date" color="vehicle_id" string="Calendar vehicles uses">
+					<field name="name"/>
+					<field name="vehicle_id"/>
+					<field name="driver_id"/>
+				</calendar>
+            </field>
+		</record>
+
+        <!-- FORM VIEW Use -->
+		<record id='view_form_vehicletfleetmanager_use_a4i' model='ir.ui.view'>
+            <field name="name">view_form_vehicletfleetmanager_use_a4i</field>
+            <field name="model">a4i.vehiclefleetmanager.vehicle.use</field>
+            <field name="arch" type="xml">
+                <form string="vehicle fleet manager - Use">
+
+                    <header>
+                        <button name="wkf_accept" string="Accept" type="object" class="op_top_button_inline oe_highlight" icon="fa-check" states='requested'/>
+                        <button name="wkf_reject" string="Reject" type="object" class="op_top_button_inline openprod_cancel_button" icon="fa-times" states='requested'/>
+                        <button name="wkf_done" string="Done" type="object" class="op_top_button_inline oe_highlight" icon="fa-check-circle" states='accepted'/>
+                        <button name="wkf_cancel" string="Cancel" type="object" class="op_top_button_inline openprod_cancel_button" icon="fa-ban" states='requested, accepted, rejected'/>
+						<field name="state" widget="statusbar" statusbar_visible="requested,accepted,done"/>
+					</header>
+
+                        <group colspan="8" col="8">
+                            <group colspan="8" col="8">
+                                <div class="oe_title" colspan="4">
+                                    <h1>
+                                        <group>
+                                            <field name="name" readonly="1" nolabel="1"/>
+                                        </group>
+                                    </h1>
+                                </div>
+                                <group name="request" string="Request" colspan="8" col="4">
+                                    <field name="request_creation_date"/>
+                                    <field name="vehicle_id" required="1"/>
+                                    <field name="driver_id" required="1"/>
+                                </group>
+
+                                <group name="planning" string="Dates" colspan="8" col="4">
+                                    <field name="start_date" required="1"/>
+                                    <field name="end_date"/>
+                                </group>
+
+                                <group name="notes" string="Notes" colspan="8" col="4">
+                                    <field name="notes"/>
+                                </group>
+
+                            </group>
+                        </group>
+
+                </form>
+            </field>
+        </record>
+
+    </data>
+</openerp>

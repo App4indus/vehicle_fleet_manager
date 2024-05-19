@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+	<data>
+
+		<!-- ACTION Accident -->
+		<record id="act_vehiclefleetmanager_accident_a4i" model="ir.actions.act_window">
+		    <field name="name">Accidents</field>
+		    <field name="res_model">a4i.vehiclefleetmanager.vehicle.accident</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form</field>
+		</record>
+
+        <!-- TREE VIEW Accidents -->
+		<record id='view_tree_vehicletfleetmanager_accident_a4i' model='ir.ui.view'>
+            <field name="name">view_tree_vehicletfleetmanager_accident_a4i</field>
+            <field name="model">a4i.vehiclefleetmanager.vehicle.accident</field>
+            <field name="arch" type="xml">
+                <tree string="vehicle fleet manager - Accidents">
+                    <field name="name"/>
+                    <field name="type"/>
+                    <field name="vehicle_id"/>
+                    <field name="driver_id"/>
+                    <field name="accident_date"/>
+                    <field name="accident_location"/>
+                    <field name="insurance_company"/>
+                    <field name="reparation_date"/>
+                    <field name="currency_id" invisible="1"/>
+                    <field name="reparation_amount" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                    <field name="state" widget="char_tag" tag_colors="#2196F3: state == 'declared'; #FFC107: state == 'in_expertise'; #FFC107: state == 'in_reparation'; #4CAF50: state == 'done'" />
+                </tree>
+            </field>
+        </record>
+
+        <!-- FORM VIEW Accident -->
+		<record id='view_form_vehicletfleetmanager_accident_a4i' model='ir.ui.view'>
+            <field name="name">view_form_vehicletfleetmanager_accident_a4i</field>
+            <field name="model">a4i.vehiclefleetmanager.vehicle.accident</field>
+            <field name="arch" type="xml">
+                <form string="vehicle fleet manager - Accident">
+
+                    <header>
+						<button name="wkf_draft" string="Draft" type="object" class="op_top_button_inline oe_highlight" icon="fa-pencil" states='done'/>
+						<button name="wkf_declared" string="Declare" type="object" class="op_top_button_inline oe_highlight" icon="fa-paper-plane-o" states='draft'/>
+						<button name="wkf_in_expertise" string="In expertise" type="object" class="op_top_button_inline oe_highlight" icon="fa-spinner" states='draft,declared'/>
+						<button name="wkf_in_reparation" string="In reparation" type="object" class="op_top_button_inline oe_highlight" icon="fa-wrench" states='draft,declared,in_expertise'/>
+						<button name="wkf_done" string="Done" type="object" class="op_top_button_inline oe_highlight" icon="fa-check" states='declared,in_expertise,in_reparation'/>
+						<field name="state" widget="statusbar" statusbar_visible="draft,declared,in_expertise,in_reparation,done"/>
+					</header>
+
+                        <group colspan="8" col="8">
+                            <group colspan="8">
+                                <h1>
+                                    <group>
+                                        <field name="name" nolabel="1"/>
+                                    </group>
+                                </h1>
+                            </group>
+                            <group name="info" string="Infos" colspan="8" col="4">
+                                <field name="type"/>
+                                <field name="vehicle_id"/>
+                                <field name="driver_id" />
+                                <field name="accident_date"/>
+                                <field name="accident_location"/>
+                            </group>
+                            <group name="insurance" string="Insurance" colspan="4" col="4">
+                                <field name="insurance_company"/>
+                                <field name="expertise_date"/>
+                            </group>
+                            <group name="reparation" string="Reparations" colspan="4" col="4">
+                                <field name="reparation_date"/>
+                                <field name="currency_id" invisible="1"/>
+                                <field name="deductible_amount" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                                <field name="reparation_amount" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                            </group>
+                            <group colspan="8">
+                                <notebook name="notebook">
+                                    <page name="Documents" string="Documents">
+                                        <group name="documents">
+                                            <field name="document_ids" nolabel="1"/>
+                                        </group>
+                                    </page>
+                                    <page name="Notes" string="Notes">
+                                        <group name="notes">
+                                            <field name="internal_note" nolabel="1"/>
+                                        </group>
+                                    </page>
+                                </notebook>
+                            </group>
+                        </group>
+
+                </form>
+            </field>
+        </record>
+
+    </data>
+</openerp>

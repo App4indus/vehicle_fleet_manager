@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+	<data>
+
+		<!-- ACTION Contract -->
+		<record id="act_vehiclefleetmanager_contract_a4i" model="ir.actions.act_window">
+		    <field name="name">Auto contracts</field>
+		    <field name="res_model">a4i.administrative.contract</field>
+		    <field name="view_type">form</field>
+		    <field name="domain">[('vehicle_id', '!=', False)]</field>
+		    <field name="view_mode">tree,form</field>
+		</record>
+
+	</data>
+</openerp>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+	<data>
+
+		<!-- ACTION vehicles -->
+		<record id="act_vehiclefleetmanager_vehicle_a4i" model="ir.actions.act_window">
+		    <field name="name">Vehicles</field>
+		    <field name="res_model">a4i.vehiclefleetmanager.vehicle</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form,kanban,carto_view</field>
+		</record>
+
+        <!-- ACTION vehicle models -->
+		<record id="act_vehiclefleetmanager_vehicle_model_a4i" model="ir.actions.act_window">
+		    <field name="name">vehicle models</field>
+		    <field name="res_model">a4i.vehiclefleetmanager.vehicle.model</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form</field>
+		</record>
+
+        <!-- ACTION add vehicle -->
+		<record id="act_vehiclefleetmanager_add_vehicle_a4i" model="ir.actions.act_window">
+		    <field name="name">Add vehicle</field>
+		    <field name="res_model">a4i.vehiclefleetmanager.vehicle</field>
+		    <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+		    <field name="target">new</field>
+		</record>
+
+        <!-- TREE VIEW vehicles -->
+		<record id='view_tree_vehicletfleetmanager_vehicle_a4i' model='ir.ui.view'>
+            <field name="name">view_tree_vehicletfleetmanager_vehicle_a4i</field>
+            <field name="model">a4i.vehiclefleetmanager.vehicle</field>
+            <field name="arch" type="xml">
+                <tree string="Vehicle fleet manager - vehicles">
+                    <field name="name"/>
+                    <field name="type_id"/>
+                    <field name="numberplate"/>
+                    <field name="last_odometer_value" string="Last odometer (Kms)"/>
+                    <field name="registration_date"/>
+                    <field name="vehicle_manufacturer_id"/>
+                    <field name="responsible_id" widget="many2one_avatar" />
+                    <field name="currency_id" invisible="1" />
+                    <field name="is_located"/>
+                    <field name="total_cost" widget="monetary" options="{'currency_field': 'currency_id'}" sum="Total"/>
+                    <field name="tag_ids" widget="many2many_tags"/>
+                    <field name="state" widget="char_tag" tag_colors="#F44336: state == 'out_service'; #4CAF50: state == 'in_service'; #2196F3: state == 'requested'; #2196F3: state == 'ordered' " />
+                </tree>
+            </field>
+        </record>
+
+        <!-- FORM VIEW vehicle -->
+		<record id='view_form_vehicletfleetmanager_vehicle_a4i' model='ir.ui.view'>
+            <field name="name">view_form_vehicletfleetmanager_vehicle_a4i</field>
+            <field name="model">a4i.vehiclefleetmanager.vehicle</field>
+            <field name="arch" type="xml">
+                <form string="vehicle fleet manager - vehicle">
+
+                      <header>
+						<button name="wkf_draft" string="Draft" type="object" class="op_top_button_inline oe_highlight" icon="fa-pen" states='obsolete'/>
+						<button name="wkf_requested" string="Requested" type="object" class="op_top_button_inline oe_highlight" icon="fa-question" states='draft'/>
+						<button name="wkf_ordered" string="Ordered" type="object" class="op_top_button_inline oe_highlight" icon="fa-spinner" states='draft,requested'/>
+						<button name="wkf_in_service" string="In service" type="object" class="op_top_button_inline oe_highlight" icon="fa-check" states='draft,requested,ordered,out_service'/>
+						<button name="wkf_out_service" string="Out service" type="object" class="op_top_button_inline openprod_cancel_button" icon="fa-ban" states='draft,in_service'/>
+						<field name="state" widget="statusbar" statusbar_visible="requested,ordered,in_service,out_service,obsolete" clickable="True"/>
+					</header>
+
+                    <group colspan="4" col="9">
+                        <group colspan="8" col="8">
+                            <group colspan="8" col="8">
+                                <group colspan="8">
+                                    <h1>
+                                        <group>
+                                            <field name="name" nolabel="1"/>
+                                        </group>
+                                    </h1>
+                                </group>
+                                <group name="logo" colspan="2" col="1">
+                                    <field name="image" widget="image" nolabel="1" colspan="1" class="oe_left" img_maxheight="150px" allowpopup="1"/>
+                                </group>
+                                <group name="info" string="Infos" colspan="6" col="4">
+                                    <field name="vehicle_manufacturer_id"/>
+                                    <field name="model_id"/>
+                                    <field name="type_id"/>
+                                    <field name="numberplate" attrs="{'required': [('state', '=', 'in_service')]}"/>
+                                    <field name="chassis_number"/>
+                                    <field name="acquisition_mode"/>
+                                    <field name="expected_delivery_date" attrs="{'invisible': [('state', '!=', 'ordered')]}"/>
+                                    <field name="registration_date" attrs="{'invisible': [('state', 'in', ('requested', 'ordered'))], 'required': [('state', '=', 'in_service')]}"/>
+                                    <field name="vendor_id"/>
+                                    <field name="responsible_id" widget="many2one_avatar" />
+                                    <field name="last_odometer_value"/>
+                                    <field name="tag_ids" widget="many2many_tags"/>
+                                </group>
+                                <group name="assignation" string="Assignation" colspan="6" col="6">
+                                    <field name="assigned_driver_id"/>
+                                    <field name="assignation_date"/>
+
+                                </group>
+                            </group>
+
+                            <group name="notebook">
+                                <notebook name="main_notebook">
+                                     <page name="additional_infos" string="Model infos">
+                                        <group name="additional_infos" col="8">
+                                            <group name="vehicle" string="Vehicle" colspan="8" col="8">
+                                                <field name="model_year"/>
+                                                <field name="color"/>
+                                                <field name="seats_nb"/>
+                                                <field name="doors_nb"/>
+                                            </group>
+                                            <group name="fiscality" string="Fiscality" colspan="8" col="8">
+                                                <field name="fiscal_horsepower"/>
+                                                <field name="co2_emissions"/>
+                                                <field name="environmental_bonus_malus"/>
+                                            </group>
+                                            <group name="motorisation" string="Motorisation" colspan="8" col="8">
+                                                <field name="energy_type"/>
+                                                <field name="transmission_type"/>
+                                                <field name="engine_power"/>
+                                            </group>
+                                        </group>
+                                    </page>
+
+                                    <page name="contract" string="Contracts">
+                                        <group name="contract" string="Contract">
+                                            <field name="contract_ids" nolabel="1"/>
+                                        </group>
+                                    </page>
+
+                                    <page name="use" string="Uses" attrs="{'invisible': ['|', ('state', 'in', ('requested', 'ordered'))]}">
+                                        <field name="use_ids" nolabel="1"/>
+                                    </page>
+
+                                     <page name="intervention" string="Interventions" attrs="{'invisible': [('state', 'in', ('requested', 'ordered'))]}">
+                                         <field name="intervention_ids" nolabel="1">
+                                             <tree>
+                                                 <field name="name"/>
+                                                 <field name="supplier_id"/>
+                                                 <field name="planned_date"/>
+                                                 <field name="real_date"/>
+                                                 <field name="odometer"/>
+                                                 <field name="currency_id" invisible="1"/>
+                                                 <field name="amount" sum="Total" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                                                 <field name="state" widget="char_tag" tag_colors="#2196F3: state == 'requested'; #FFC107: state == 'in_progress'; #FFC107: state == 'planned'; #4CAF50: state == 'done'" />
+
+                                             </tree>
+                                         </field>
+                                    </page>
+
+                                    <page name="odometers" string="Odometers" attrs="{'invisible': [('state', 'in', ('requested', 'ordered'))]}">
+                                        <field name="odometer_ids" nolabel="1">
+                                            <tree order="update_date desc">
+                                                <field name="update_date"/>
+                                                <field name="update_user_id" widget="many2one_avatar"/>
+                                                <field name="odometer_value"/>
+                                                <field name="update_origin"/>
+                                            </tree>
+                                        </field>
+                                    </page>
+
+                                    <page name="fines" string="Fines" attrs="{'invisible': [('state', 'in', ('requested', 'ordered'))]}">
+                                        <field name="fine_ids" nolabel="1">
+                                            <tree>
+                                                 <field name="driver_id"/>
+                                                 <field name="citation_date"/>
+                                                 <field name="citation_location"/>
+                                                 <field name="currency_id" invisible="1"/>
+                                                 <field name="amount" sum="Total" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                                                 <field name="state" widget="char_tag" tag_colors="#2196F3: state == 'received'; #F44336: state == 'contested'; #FFC107: state == 'in_progress'; #FFC107: state == 'pending_payment'; #4CAF50: state == 'paid'" />
+                                            </tree>
+                                        </field>
+                                    </page>
+
+                                    <page name="accidents" string="Accidents" attrs="{'invisible': [('state', 'in', ('requested', 'ordered'))]}">
+                                        <field name="accident_ids" nolabel="1">
+                                            <tree>
+                                                 <field name="type"/>
+                                                 <field name="driver_id"/>
+                                                 <field name="accident_date"/>
+                                                 <field name="accident_location"/>
+                                                <field name="currency_id" invisible="1"/>
+                                                 <field name="reparation_amount" sum="Total" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                                                 <field name="state" widget="char_tag" tag_colors="#2196F3: state == 'declared'; #F44336: state == 'in_reparations'; #FFC107: state == 'in_expertise'; #4CAF50: state == 'done'" />
+                                            </tree>
+                                        </field>
+                                    </page>
+
+                                     <page name="documents" string="Documents">
+                                        <group name="document" string="Documents">
+                                            <field name="document_ids" nolabel="1"/>
+                                        </group>
+                                    </page>
+
+                                    <page name="costs" string="Costs">
+                                        <group name="costs" string="Total costs" col="4">
+                                            <field name="purchase_cost" attrs="{'invisible': [('acquisition_mode', '!=', 'purchase')]}"/>
+                                            <field name="total_cost" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                                            <field name="currency_id"/>
+                                        </group>
+                                    </page>
+
+                                    <page name="geolocation" string="Geolocation">
+                                        <group name="geoloc-config">
+                                            <field name="geolocation_enabled"/>
+                                        </group>
+                                        <group attrs="{'invisible':[('geolocation_enabled', '=', False)]}" col="6">
+                                            <field name="geolocation_reference"/>
+                                            <group colspan="6" col="6" name="geoloc" string="Geolocation">
+                                                <field name="last_geoloc_datetime" readonly="1"/>
+                                                <field name="lat"/>
+                                                <field name="lng"/>
+                                                </group>
+                                        </group>
+                                    </page>
+
+                                    <page name="note" string="Notes">
+                                        <group name="note" string="Notes">
+                                            <field name="internal_note" nolabel="1"/>
+                                        </group>
+                                    </page>
+
+                                </notebook>
+                            </group>
+                        </group>
+
+                        <group colspan="1" col="1" class="op_shortcuts">
+                            <separator colspan="1" string="Actions" name="separator_actions_menu"/>
+                                <button name="update_odometer" string="Update odometer manually" type="object" class="oe_inline oe_stat_button" icon="fa-tachometer" />
+                                <button name="create_intervention" string="Create intervention" type="object" class="oe_inline oe_stat_button" icon="fa-cogs" />
+                                <button name="create_accident" string="Create accident" type="object" class="oe_inline oe_stat_button" icon="fa-phone-square" />
+                                <button name="request_use" string="Request use" type="object" class="oe_inline oe_stat_button" icon="fa-car" />
+                            <separator colspan="1" string="Analysis" name="separator_analysis_menu"/>
+                                <button name="show_contracts" string="Show contracts" type="object" class="oe_inline oe_stat_button" icon="fa-file-text-o" />
+                                <button name="show_fines" string="Show fines" type="object" class="oe_inline oe_stat_button" icon="fa-file-text-o" />
+                                <button name="show_interventions" string="Show interventions" type="object" class="oe_inline oe_stat_button" icon="fa-file-text-o" />
+                                <button name="show_accidents" string="Show accidents" type="object" class="oe_inline oe_stat_button" icon="fa-file-text-o" />
+                                <button name="show_uses" string="Show uses" type="object" class="oe_inline oe_stat_button" icon="fa-file-text-o" />
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <!-- KANBAN VIEW vehicles -->
+        <record id='view_kanban_vehicletfleetmanager_vehicle_a4i' model='ir.ui.view'>
+            <field name="name">view_kanban_vehicletfleetmanager_vehicle_a4i</field>
+            <field name="model">a4i.vehiclefleetmanager.vehicle</field>
+            <field name="arch" type="xml">
+				<kanban class="oe_background_grey" default_group_by="state">
+                    <field name="state"/>
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div class="oe_kanban_content">
+                                <div class="oe_kanban_card oe_kanban_global_click">
+
+                                    <div class="oe_kanban_content">
+                                        <h4 class="oe_partner_heading" align="middle" valign="middle">
+                                            <a type="open">
+                                                <field name="name" />
+                                            </a>
+                                        </h4>
+
+                                        <a type="open">
+                                            <t>
+                                                <img t-att-src="kanban_image('a4i.vehiclefleetmanager.vehicle', 'image', record.id.value)" class="oe_kanban_image" />
+                                            </t>
+                                        </a>
+
+                                        <div class="oe_center">
+                                            <span><b>Type : </b> <field name="type_id"/></span>
+                                        </div>
+                                        <div class="oe_center">
+                                            <span><b>Manufacturer : </b> <field name="vehicle_manufacturer_id"/></span>
+                                        </div>
+                                        <div class="oe_center">
+                                            <span><b>Model : </b> <field name="model_id"/></span>
+                                        </div>
+                                        <div class="oe_center">
+                                            <span><b>Numberplate :</b> <field name="numberplate"/></span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+
+    </data>
+</openerp>

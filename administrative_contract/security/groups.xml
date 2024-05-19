@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="1">
+		<!-- ====== -->
+		<!-- GROUPS -->
+		<!-- ====== -->
+		<record model="ir.module.category" id="group_root_administrative_contract">
+			<field name="name">Administrative contract</field>
+			<field name="sequence">1000</field>
+		</record>
+
+		<record model="res.groups" id="group_administrative_contract_user">
+            <field name="name">User</field>
+            <field name="category_id" eval="ref('administrative_contract.group_root_administrative_contract')"/>
+        </record>
+		<record model="res.groups" id="group_administrative_contract_functional">
+            <field name="name">Functional</field>
+            <field name="category_id" eval="ref('administrative_contract.group_root_administrative_contract')"/>
+			<field name="implied_ids" eval="[(4, ref('group_administrative_contract_user'))]"/>
+        </record>
+		<record model="res.groups" id="group_administrative_contract_manager">
+            <field name="name">Manager</field>
+            <field name="category_id" eval="ref('administrative_contract.group_root_administrative_contract')"/>
+			<field name="implied_ids" eval="[(4, ref('group_administrative_contract_functional'))]"/>
+        </record>
+		<record model="res.groups" id="group_administrative_contract_administrator">
+            <field name="name">Administrator</field>
+            <field name="category_id" eval="ref('administrative_contract.group_root_administrative_contract')"/>
+			<field name="implied_ids" eval="[(4, ref('group_administrative_contract_manager'))]"/>
+        </record>
+	</data>
+</openerp>

@@ -8,8 +8,7 @@
 
 ## Vue d'ensemble
 
-Bienvenue sur le repo **Module de Gestion de Flotte Automobile**. Ce module est conçu pour optimiser et simplifier la gestion de votre flotte de véhicules. Que vous gériez une petite flotte de voitures ou une grande flotte de camions, ce module vous fournit les outils nécessaires pour assurer des opérations de flotte efficaces.
-
+Bienvenue sur le repo **Module de Gestion de Flotte Automobile**. Ce module développé pour le logiciel ERP open-source [Open-prod](https://open-prod.com/) est conçu pour optimiser et simplifier la gestion de votre flotte de véhicules. Que vous gériez une petite flotte de voitures ou une grande flotte de camions, ce module vous fournit les outils nécessaires pour assurer une gestion de votre flotte centralisée et efficace.
 
 ## Fonctionnalités
 
@@ -30,19 +29,22 @@ Ce module dépend du module **Administrative Contract**, qui est inclus dans le 
     git clone https://github.com/App4indus/vehicle_fleet_manager.git
     ```
 
-2. **Ajoutez à Open-prod** : Copiez le module dans votre répertoire d'addons Odoo.
+2. **Ajoutez à Open-prod** : Copiez les deux dossiers des modules dans votre répertoire d'addons Open-prod.
     ```bash
     cp -r vehicle_fleet_manager /chemin/vers/openprod/custom-addons/
+    cp -r administrative_contract /chemin/vers/openprod/custom-addons/
     ```
 
 3. **Mettez à jour la Liste des Applications** : Dans Open-prod, mettez à jour la liste des applications pour inclure le nouveau module : Configuration > Applications > Mettre à jour la liste des applications
 
 
-5. **Installer le Module** : Dans Open-prod, installez le module : : Configuration > Applications > Toutes les applications > recheercher 'vehicle_fleet_manager' > Insaller
+4. **Installer le Module** : Dans Open-prod, installez le module : Configuration > Applications > Toutes les applications > recheercher 'vehicle_fleet_manager' > Insaller
 
 ## Utilisation
 
 Une fois installé, affectez les droits requis dnas la configuration d'Open-prod. Puis, rendez-vous dans le menu 'Flotte automobile'.
+
+![Tableau de Bord Flotte](https://votre-url-image.com/tableau-bord-flotte.png)
 
 ## Screens 
 
@@ -71,7 +73,7 @@ Ce projet est licencié sous la licence LGPL-3.0 - voir le fichier [LICENSE](LIC
 
 ## Tarif
 
-Ce projet open-source est gratuit et libre d'utilisation.
+Ce projet open-source et gratuit.
 
 ## Absence de Garantie
 
@@ -79,6 +81,6 @@ Ce logiciel est distribué en l'état, sans aucune garantie. En aucun cas, les a
 
 ## Contact
 
-Pour toute questions, suggestions, customisation ou support, veuillez contacter [info@app4indus.com](mailto:info@app4indus.com).
+Pour toute questions, suggestions, customisation ou support, veuillez nous contacter à [info@app4indus.com](mailto:info@app4indus.com).
 
 ---

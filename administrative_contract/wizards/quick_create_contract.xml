@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+
+		<!-- ACTION contract quick create Wizard -->
+		<record id="act_administrative_contract_quick_create_a4i" model="ir.actions.act_window">
+		    <field name="name">Administrative contract - quick create</field>
+		    <field name="res_model">a4i.administrative.contract.quick.create.wizard</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">form</field>
+		    <field name="target">new</field>
+		</record>
+
+		<!-- FORM VIEW contract quick create Wizard -->
+		<record model="ir.ui.view" id="form_view_contract_quick_create_a4i">
+			<field name="name">form_view_contract_quick_create_a4i</field>
+			<field name="model">a4i.administrative.contract.quick.create.wizard</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Administrative contract - quick create">
+					<group colspan="4" col="4" name="contract" string="Contract">
+						<field name="name"/>
+						<field name="type_id"/>
+						<field name="responsible_id" widget="many2one_avatar" />
+					</group>
+
+                    <group colspan="4" col="4" name="dates" string="Dates">
+						<field name="start_date"/>
+						<field name="end_date"/>
+					</group>
+
+					<group colspan="4" col="4" name="notes" string="Notes">
+						<field name="internal_note" nolabel="1"/>
+					</group>
+
+					<footer>
+						<button name="create_contract" string="Create contract" type="object" class="oe_highlight"/>
+						<button string="Cancel" class="oe_link" special="cancel" />
+					</footer>
+				</form>
+			</field>
+		</record>
+	</data>
+
+</openerp>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+	<data>
+
+        <!-- ACTION analysis -->
+        <record id="act_contract_administrative_analysis_a4i" model="ir.actions.act_window">
+			<field name="name">Contracts analysis</field>
+			<field name="res_model">a4i.administrative.contract</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">graph,pivot</field>
+		</record>
+
+		<!-- ACTION Contract -->
+		<record id="act_contract_administrative_a4i" model="ir.actions.act_window">
+		    <field name="name">Contracts</field>
+		    <field name="res_model">a4i.administrative.contract</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form</field>
+		</record>
+
+        <!-- TREE VIEW Contracts -->
+		<record id='view_tree_contract_administrative_a4i' model='ir.ui.view'>
+            <field name="name">view_tree_contract_administrative_a4i</field>
+            <field name="model">a4i.administrative.contract</field>
+            <field name="arch" type="xml">
+                <tree string="Administrative contracts">
+                    <field name="name"/>
+                    <field name="responsible_id" widget="many2one_avatar" />
+                    <field name="type_id"/>
+                    <field name="contract_reference"/>
+                    <field name="start_date"/>
+                    <field name="end_date"/>
+                    <field name="reminder"/>
+					<field name="next_action" invisible="1"/>
+					<field name="next_action_icon" invisible="1"/>
+                    <field name="next_action_label" invisible="1"/>
+                    <field name="next_action_color" invisible="1"/>
+					<button name="button_next_action_purchase" show_header="1" attrs="{'invisible': [('next_action', '=', False)]}" string="Next action" style="white-space: nowrap;display: inherit !important;" dynamic_icon="next_action_icon" dynamic_string="next_action_label" type="object" text_colors="orange: (next_action_color=='orange'); red: (next_action_color=='red'); green: (next_action_color=='green');"/>
+					<field name="currency_id" invisible="1"/>
+					<field name="total_cost" sum="Total" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                    <field name="state" widget="char_tag" tag_colors="#F44336: state == 'expired'; #4CAF50: state == 'in_progress';  #FF9800: state == 'to_cancel'; #FFC107: state == 'waiting'; #9E9E9E: state == 'draft'" />
+                </tree>
+            </field>
+        </record>
+
+        <!-- FORM VIEW Contract -->
+		<record id='view_form_contract_administrativea4i' model='ir.ui.view'>
+            <field name="name">view_form_contract_administrativea4i</field>
+            <field name="model">a4i.administrative.contract</field>
+            <field name="arch" type="xml">
+                <form string="Administrative contract">
+
+                    <header>
+						<button name="wkf_draft" string="Draft" type="object" class="op_top_button_inline oe_highlight" icon="fa-pencil" states='expired'/>
+						<button name="wkf_waiting" string="Waiting" type="object" class="op_top_button_inline oe_highlight" icon="fa-spinner" states='draft'/>
+						<button name="wkf_in_progress" string="In progress" type="object" class="op_top_button_inline oe_highlight" icon="fa-check" states='waiting'/>
+						<button name="wkf_to_cancel" string="To cancel" type="object" class="op_top_button_inline openprod_cancel_button" icon="fa-stop" states='in_progress'/>
+						<button name="wkf_expired" string="Expired" type="object" class="op_top_button_inline openprod_cancel_button" icon="fa-archive" states='in_progress,to_cancel'/>
+						<field name="state" widget="statusbar" statusbar_visible="draft,waiting,in_progress,expired" clickable="True"/>
+					</header>
+
+                    <group colspan="4" col="9">
+                        <group colspan="8" col="8">
+                            <group colspan="8" col="8">
+                                <group colspan="8">
+                                    <h1>
+                                        <group>
+                                            <field name="name" nolabel="1"/>
+                                        </group>
+                                    </h1>
+                                </group>
+                                <group name="info" string="Infos" colspan="8" col="6">
+                                    <field name="type_id"/>
+                                    <field name="contract_reference"/>
+                                    <field name="responsible_id" widget="many2one_avatar" />
+                                    <field name="partner_id"/>
+                                    <field name="currency_id"/>
+                                </group>
+
+                                 <group name="dates" string="Dates" colspan="8" col="6">
+                                    <field name="start_date"/>
+                                    <field name="end_date"/>
+                                    <field name="automatic_renewal"/>
+                                    <field name="notice_days"/>
+                                    <field name="reminder"/>
+                                    <field name="reminder_date" attrs="{'invisible': [('reminder', '=', False)], 'required': [('reminder', '=', True)]}"/>
+                                    <field name="reminder_recipient_id" widget="many2one_avatar"  attrs="{'invisible': [('reminder', '=', False)], 'required': [('reminder', '=', True)]}"/>
+                                </group>
+
+                            </group>
+
+                            <group name="notebook">
+                                <notebook name="main_notebook">
+                                    <page name="cost" string="Costs">
+                                        <group name="'config_costs" col="6">
+                                            <group name="initial_cost" string="Initial cost" colspan="2" col="6">
+                                                <field name="application_cost" colspan="2" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                                            </group>
+                                             <group name="periodical_costs" string="Periodical costs" colspan="3" col="6">
+                                                <field name="periodical_cost_frequency"/>
+                                                <field name="periodical_cost" widget="monetary" options="{'currency_field': 'currency_id'}" attrs="{'invisible': [('periodical_cost_frequency', '=', False)]}"/>
+                                            </group>
+                                        </group>
+                                        <group name="invoices_costs" string="Real costs from invoices" colspan="6" col="6">
+                                            <field name="invoices_cost" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                                        </group>
+                                    </page>
+
+                                    <page name="invoices" string="Invoices">
+                                        <group name="Invoices" string="Invoices">
+                                            <field name="supplier_invoice_ids" nolabel="1"/>
+                                        </group>
+                                    </page>
+
+                                     <page name="document" string="Documents">
+                                        <group name="document" string="Documents">
+                                            <field name="document_ids" nolabel="1"/>
+                                        </group>
+                                    </page>
+                                    <page name="note" string="Notes">
+                                        <group name="note" string="Notes">
+                                            <field name="internal_note"/>
+                                        </group>
+                                    </page>
+
+                                </notebook>
+
+                            </group>
+                        </group>
+
+                        <group colspan="1" col="1" class="op_shortcuts">
+                            <separator colspan="1" string="Actions" name="separator_actions_menu"/>
+                                <button name="affect_account_invoices" string="Affect account invoices" type="object" class="oe_inline oe_stat_button" icon="fa-money" />
+								<button class="oe_inline oe_stat_button" name="create_action" string="Create new action" type="object" icon="fa-plus-square" />
+								<button class="oe_inline oe_stat_button" type="object" name="show_actions" icon="fa-th-large" >
+									<field name="nb_actions" widget="statinfo" />
+								</button>
+							<separator colspan="1" string="Analysis" name="separator_analysis_menu"/>
+                                <button name="show_invoices" string="Show related invoices" type="object" class="oe_inline oe_stat_button" icon="fa-money" />
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <!-- PIVOT VIEW Contracts -->
+        <record id="view_pivot_administrative_contract_a4i" model="ir.ui.view">
+			<field name="name">view_pivot_administrative_contract_a4i</field>
+			<field name="model">a4i.administrative.contract</field>
+			<field name="arch" type="xml">
+				<pivot string="Contracts analysis">
+                    <field name="name" type="row"/>
+					<field name="total_cost" type="measure"/>
+				</pivot>
+			</field>
+		</record>
+
+        <!-- GRAPH VIEW Contracts -->
+        <record id="view_graph_administrative_contract_a4i" model="ir.ui.view">
+			<field name="name">view_graph_administrative_contract_a4i</field>
+			<field name="model">a4i.administrative.contract</field>
+			<field name="arch" type="xml">
+				<graph string="Contracts costs analysis">
+					<field name="name" type="row"/>
+					<field name="total_cost" type="measure"/>
+				</graph>
+			</field>
+		</record>
+
+    </data>
+</openerp>

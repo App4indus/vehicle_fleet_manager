@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+
+		<!-- ACTION vehicle quick create Wizard -->
+		<record id="act_vehiclefleetmanager_vehicle_quick_create_a4i" model="ir.actions.act_window">
+		    <field name="name">Vehicle - quick create</field>
+		    <field name="res_model">a4i.vehiclefleetmanager.vehicle.quick.create.wizard</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">form</field>
+		    <field name="target">new</field>
+		</record>
+
+		<!-- FORM VIEW vehicle quick create Wizard -->
+		<record model="ir.ui.view" id="view_vehicle_quick_create_a4i">
+			<field name="name">view_vehicle_quick_create_a4i</field>
+			<field name="model">a4i.vehiclefleetmanager.vehicle.quick.create.wizard</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Vehicle - quick create">
+					<group colspan="4" col="4" name="vehicle" string="Vehicle">
+						<field name="name"/>
+						<field name="vehicle_manufacturer_id"/>
+						<field name="model_id" domain="[('vehicle_manufacturer_id', '=', vehicle_manufacturer_id)]"/>
+						<field name="type_id"/>
+						<field name="responsible_id" widget="many2one_avatar" />
+					</group>
+
+                    <group colspan="4" col="4" name="identification" string="Identification">
+						<field name="registration_date"/>
+						<field name="numberplate"/>
+					</group>
+
+					<footer>
+						<button name="create_vehicle" string="Create vehicle" type="object" class="oe_highlight"/>
+						<button string="Cancel" class="oe_link" special="cancel" />
+					</footer>
+				</form>
+			</field>
+		</record>
+	</data>
+
+</openerp>

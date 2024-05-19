@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+
+		<!-- ACTION fine quick create Wizard -->
+		<record id="act_vehiclefleetmanager_fine_quick_create_a4i" model="ir.actions.act_window">
+		    <field name="name">Fine - quick create</field>
+		    <field name="res_model">a4i.vehiclefleetmanager.fine.quick.create.wizard</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">form</field>
+		    <field name="target">new</field>
+		</record>
+
+		<!-- FORM VIEW fine quick create Wizard -->
+		<record model="ir.ui.view" id="view_fine_quick_create_a4i">
+			<field name="name">view_fine_quick_create_a4i</field>
+			<field name="model">a4i.vehiclefleetmanager.fine.quick.create.wizard</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Fine - quick create">
+					<group colspan="4" col="4" name="origin" string="Origin">
+						<field name="vehicle_id"/>
+						<field name="driver_id"/>
+					</group>
+
+                    <group colspan="4" col="4" name="fine" string="Fine">
+						<field name="citation_date"/>
+						<field name="citation_location"/>
+						<field name="name" invisible="1"/>
+					</group>
+
+					<group colspan="4" col="4" name="note" string="Notes">
+						<field name="internal_note" nolabel="1"/>
+					</group>
+
+					<footer>
+						<button name="create_fine" string="Create fine" type="object" class="oe_highlight"/>
+						<button string="Cancel" class="oe_link" special="cancel" />
+					</footer>
+				</form>
+			</field>
+		</record>
+	</data>
+
+</openerp>

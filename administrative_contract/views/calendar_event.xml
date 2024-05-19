@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+	<data>
+
+		<!-- FORM VIEW CALENDAR EVENT -->
+		<record id='view_form_calendar_event_a4i' model='ir.ui.view'>
+            <field name="name">view_form_calendar_event_a4i</field>
+            <field name="model">calendar.event</field>
+			<field name="inherit_id" ref= "base_openprod.view_form_calendar_event"/>
+			<field name="priority" eval="5000"/>
+            <field name="arch" type="xml">
+
+				<!-- Ajout champ contrat -->
+				<xpath expr="//group[@name='group_link_object']" position="inside">
+					<field name="x_administrative_contract_id"  attrs="{'invisible': [('x_administrative_contract_id', '=', False)]}"/>
+				</xpath>
+
+            </field>
+		</record>
+	</data>
+</openerp>
+
