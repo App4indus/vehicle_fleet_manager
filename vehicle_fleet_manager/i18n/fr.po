@@ -731,7 +731,7 @@ msgstr "Fonctionnel"
 #: code:addons/vehicle_fleet_manager/models/vehicle.py:0,a4i.vehiclefleetmanager.vehicle
 #, python-format
 msgid "Gasoline"
-msgstr "Gasoil"
+msgstr "Essence"
 
 #. module: vehicle_fleet_manager
 #: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_form_vehicletfleetmanager_vehicle_a4i
