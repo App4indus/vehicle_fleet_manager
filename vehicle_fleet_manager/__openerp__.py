@@ -11,6 +11,8 @@
     'description': "",
     'depends': ['base', 'administrative_contract'],
     'data': [
+        'security/groups.xml',
+        'security/ir.model.access.csv',
         'data/vehicle_manufacturer.xml',
         'data/vehicle_type.xml',
         'views/contract.xml',
@@ -29,7 +31,6 @@
         'wizards/vehicle_quick_request_use.xml',
         'views/menu.xml',
         'crons/cron_generate_contract_costs.xml',
-        'security/groups.xml',
         'assets/assets.xml'
              ],
     'installable': True
