@@ -48,6 +48,9 @@ Ce module dépend du module **Administrative Contract**, qui est inclus dans le 
 Une fois installé, affectez les droits requis dans la configuration d'Open-prod. Puis, rendez-vous dans le menu 'Flotte automobile'.
 Consultez la notice d'utilisation : 
 
+[Notice d'utilisation](docs/user_manual_fr.md)
+
+
 ## Screens 
 
 ![Fiche véhicule](https://app4indus.com/wp-content/uploads/2024/01/form-view-vehicle.png)
