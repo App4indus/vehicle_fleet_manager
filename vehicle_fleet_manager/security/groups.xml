@@ -4,33 +4,34 @@
 		<!-- ====== -->
 		<!-- GROUPS -->
 		<!-- ====== -->
-		<record model="ir.module.category" id="group_root_vehicle_fleet_vehicle">
-			<field name="name">Vehicle fleet manager</field>
+
+		<record model="ir.module.category" id="group_vehicle_base">
+            <field name="name">Vehicle fleet management</field>
 			<field name="sequence">1000</field>
-		</record>
+        </record>
 
 		<record model="res.groups" id="group_vehicle_fleet_vehicle_can_book">
             <field name="name">Can book a vehicle</field>
-            <field name="category_id" eval="ref('group_root_vehicle_fleet_vehicle')"/>
+            <field name="category_id" eval="ref('base.module_category_usability')"/>
         </record>
 
 		<record model="res.groups" id="group_vehicle_fleet_vehicle_user">
             <field name="name">User</field>
-            <field name="category_id" eval="ref('group_root_vehicle_fleet_vehicle')"/>
+			<field name="category_id" eval="ref('vehicle_fleet_manager.group_vehicle_base')"/>
         </record>
 		<record model="res.groups" id="group_vehicle_fleet_vehicle_functional">
             <field name="name">Functional</field>
-            <field name="category_id" eval="ref('vehicle_fleet_manager.group_root_vehicle_fleet_vehicle')"/>
+            <field name="category_id" eval="ref('vehicle_fleet_manager.group_vehicle_base')"/>
 			<field name="implied_ids" eval="[(4, ref('group_vehicle_fleet_vehicle_user'))]"/>
         </record>
 		<record model="res.groups" id="group_vehicle_fleet_vehicle_manager">
             <field name="name">Manager</field>
-            <field name="category_id" eval="ref('vehicle_fleet_manager.group_root_vehicle_fleet_vehicle')"/>
+            <field name="category_id" eval="ref('vehicle_fleet_manager.group_vehicle_base')"/>
 			<field name="implied_ids" eval="[(4, ref('group_vehicle_fleet_vehicle_functional'))]"/>
         </record>
 		<record model="res.groups" id="group_vehicle_fleet_vehicle_administrator">
             <field name="name">Administrator</field>
-            <field name="category_id" eval="ref('vehicle_fleet_manager.group_root_vehicle_fleet_vehicle')"/>
+            <field name="category_id" eval="ref('vehicle_fleet_manager.group_vehicle_base')"/>
 			<field name="implied_ids" eval="[(4, ref('group_vehicle_fleet_vehicle_manager'))]"/>
         </record>
 	</data>
