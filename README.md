@@ -1,4 +1,4 @@
-# Module de Gestion de Flotte Automobile
+# Module Open-prod : Gestion de Flotte Automobile
 
 [![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0) [![Free](https://img.shields.io/badge/Free-Yes-green.svg)](https://github.com/votre-utilisateur/module-gestion-flotte) ![Open-prod: v9](https://img.shields.io/badge/Open--prod-v9-orange)
 ![Langues supportées: FR, EN](https://img.shields.io/badge/langage-FR%20%7C%20EN-yellow)
@@ -17,7 +17,7 @@ Bienvenue sur le repo **Module de Gestion de Flotte Automobile**. Ce module est 
 - **Planification de la Maintenance** : Planifiez et suivez les activités de maintenance pour garder vos véhicules en bon état.
 - **Localisation** : Avec la vue carte, géolocalisez vos véhicules (nécessite le développement d'un connecteur selon plateforme de géolocalisation)
 - **Gestion des Conducteurs** : Gérez les affectations des conducteurs, leurs dossiers et les demandes d'utilsiations.
-- **Analyses** : Analysez les statistiques : coûts, sinistres, PV,...
+- **Analyses** : Analysez les statistiques : coûts, sinistres, contraventions,...
 
 ## Dépendances
 
@@ -30,19 +30,23 @@ Ce module dépend du module **Administrative Contract**, qui est inclus dans le 
     git clone https://github.com/App4indus/vehicle_fleet_manager.git
     ```
 
-2. **Ajoutez à Open-prod** : Copiez le module dans votre répertoire d'addons Odoo.
+2. **Ajoutez à Open-prod** : Copiez le module dans votre répertoire d'addons custom d'Open-prod.
     ```bash
     cp -r vehicle_fleet_manager /chemin/vers/openprod/custom-addons/
     ```
 
-3. **Mettez à jour la Liste des Applications** : Dans Open-prod, mettez à jour la liste des applications pour inclure le nouveau module : Configuration > Applications > Mettre à jour la liste des applications
+3. **Configuration ficher openpord-server.conf** : Ajoutez le dossier custom-addons au ficher openprod-server.conf
+   Vérifiez que le path vers 'custom-addons' est dans le fichier openprod-server.conf, champ "addons_path ="
+
+4. **Mettez à jour la Liste des Applications** : Dans Open-prod, mettez à jour la liste des applications pour inclure le nouveau module : Configuration > Applications > Mettre à jour la liste des applications
 
 
-5. **Installer le Module** : Dans Open-prod, installez le module : : Configuration > Applications > Toutes les applications > recheercher 'vehicle_fleet_manager' > Insaller
+5. **Installer le Module** : Dans Open-prod, installez le module : Configuration > Applications > Toutes les applications > recheercher 'vehicle_fleet_manager' > Insaller
 
 ## Utilisation
 
-Une fois installé, affectez les droits requis dnas la configuration d'Open-prod. Puis, rendez-vous dans le menu 'Flotte automobile'.
+Une fois installé, affectez les droits requis dans la configuration d'Open-prod. Puis, rendez-vous dans le menu 'Flotte automobile'.
+Consultez la notice d'utilisation : 
 
 ## Screens 
 
