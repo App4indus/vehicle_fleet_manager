@@ -9,7 +9,7 @@
 		<!-- Menu items -->
 		<menuitem name="Vehicles" id="vehiclefleetmanager_vehicle_menu_a4i" parent="vehiclefleetmanager_root_menu_a4i" sequence="100"/>
 		<menuitem name="Vehicles" id="vehiclefleetmanager_vehicles_menu_a4i" parent="vehiclefleetmanager_vehicle_menu_a4i" action="act_vehiclefleetmanager_vehicle_a4i" sequence="110"/>
-		<menuitem name="Quick use request" id="vehiclefleetmanager_use_request_menu_a4i" parent="vehiclefleetmanager_vehicle_menu_a4i" action="act_vehiclefleetmanager_vehicle_quick_use_request" sequence="120"/>
+		<menuitem name="Quick use request" id="vehiclefleetmanager_use_request_menu_a4i" parent="vehiclefleetmanager_vehicle_menu_a4i" action="act_vehiclefleetmanager_vehicle_quick_use_request" sequence="120" groups="group_vehicle_fleet_vehicle_can_book"/>
 		<menuitem name="Uses" id="vehiclefleetmanager_uses_menu_a4i" parent="vehiclefleetmanager_vehicle_menu_a4i" action="act_vehiclefleetmanager_use_a4i" sequence="130"/>
 		<menuitem name="Fines" id="vehiclefleetmanager_vehicle_fine_menu_a4i" parent="vehiclefleetmanager_root_menu_a4i" sequence="300"/>
 		<menuitem name="Quick create of fine" id="vehiclefleetmanager_add_fine_menu_a4i" parent="vehiclefleetmanager_vehicle_fine_menu_a4i" action="act_vehiclefleetmanager_fine_quick_create_a4i" sequence="310"/>
@@ -27,6 +27,7 @@
 		<menuitem name="Configuration" id="vehiclefleetmanager_config_menu_a4i" parent="vehiclefleetmanager_root_menu_a4i" sequence="900"/>
 		<menuitem name="Vehicle manufacturers" id="vehiclefleetmanager_config_vehicle_manufacturers_menu_a4i" parent="vehiclefleetmanager_config_menu_a4i" action="act_vehiclefleetmanager_vehicle_manufacturer_a4i" sequence="910"/>
 		<menuitem name="Vehicle models" id="vehiclefleetmanager_config_vehicle_models_menu_a4i" parent="vehiclefleetmanager_config_menu_a4i" action="act_vehiclefleetmanager_vehicle_model_a4i" sequence="920"/>
+		<menuitem name="Drivers" id="vehiclefleetmanager_config_drivers_menu_a4i" parent="vehiclefleetmanager_config_menu_a4i" action="act_vehiclefleetmanager_driver_a4i" sequence="930"/>
 
 	</data>
 </openerp>

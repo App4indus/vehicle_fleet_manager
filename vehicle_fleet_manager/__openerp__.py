@@ -16,6 +16,7 @@
         'data/vehicle_manufacturer.xml',
         'data/vehicle_type.xml',
         'views/contract.xml',
+        'views/driver.xml',
         'views/vehicle.xml',
         'views/vehicle_model.xml',
         'views/vehicle_manufacturer.xml',

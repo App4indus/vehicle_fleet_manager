@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+	<data>
+
+		<!-- ACTION drivers -->
+		<record id="act_vehiclefleetmanager_driver_a4i" model="ir.actions.act_window">
+		    <field name="name">Drivers</field>
+		    <field name="res_model">a4i.vehiclefleetmanager.driver</field>
+		    <field name="view_type">form</field>
+		    <field name="view_mode">tree,form</field>
+		</record>
+
+        <!-- TREE VIEW drivers -->
+		<record id='view_tree_vehicletfleetmanager_driver_a4i' model='ir.ui.view'>
+            <field name="name">view_tree_vehicletfleetmanager_driver_a4i</field>
+            <field name="model">a4i.vehiclefleetmanager.driver</field>
+            <field name="arch" type="xml">
+                <tree string="Drivers">
+                    <field name="name"/>
+                    <field name="driving_license_date"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- FORM VIEW vehicle model -->
+		<record id='view_form_vehicletfleetmanager_driver_a4i' model='ir.ui.view'>
+            <field name="name">view_form_vehicletfleetmanager_driver_a4i</field>
+            <field name="model">a4i.vehiclefleetmanager.driver</field>
+            <field name="arch" type="xml">
+                <form string="Driver">
+					 <group colspan="8">
+						<h1>
+							<group>
+								<field name="name" nolabel="1"/>
+							</group>
+						</h1>
+					</group>
+
+                    <group colspan="8" col="8">
+                        <group name="info" string="Infos" colspan="8" col="8">
+                            <field name="is_user"/>
+							<field name="user_id" widget="many2one_avatar" attrs="{'invisible': [('is_user', '=', False)], 'required': [('is_user', '=', True)]}"/>
+                            <field name="last_name" attrs="{'invisible': [('is_user', '=', True)], 'required': [('is_user', '=', False)]}"/>
+                            <field name="first_name" attrs="{'invisible': [('is_user', '=', True)], 'required': [('is_user', '=', False)]}"/>
+                        </group>
+                         <group name="license" string="Driving license" colspan="8" col="6">
+                            <field name="driving_license_date"/>
+                            <field name="driving_license_document"/>
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</openerp>
