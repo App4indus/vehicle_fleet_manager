@@ -36,13 +36,13 @@ Il existe également un droit spécifique pour les demandes de réservations de 
 
 ### **Fabricants**
 
-Les fabricants automobiles sont imoortés à l'installation du module, mais peuvent être modifiés / ajoutés via le menu Configuration > Fabricants automobiles (Niveau droit admin du module requis)
+Les fabricants automobiles sont importés à l'installation du module, mais peuvent être modifiés / aEventuellementjoutés via le menu Configuration > Fabricants automobiles (Niveau droit admin du module requis)
 
 ![Config fabricants](img/config-fabricants.png)
 
 ### **Modèles**
 
-Dans le cas où vous utilisez plusieurs véhicules du même modèle, il est interessant de créer un modèle. De cette manière, lorsque vous devrez créer un nouveau véhicule, la sélection propagera la plupart des champs, renseignés dans le modèle.
+Dans le cas où vous utilisez plusieurs véhicules du même modèle, il est intéressant de créer un modèle. De cette manière, lorsque vous devrez créer un nouveau véhicule, la sélection propagera la plupart des champs, renseignés dans le modèle.
 Pour se rendre sur les modèles :  Flotte automobile > Configuration > Modèles
 
 ![Config modeles](img/config-models.png)
@@ -72,11 +72,11 @@ Pour ajouter un véhicule, cliquer sur le bouton "Créer".
 Commencer par renseigner :
 
 - Le fabricant (obligatoire)
-- Le modèle (facultatif) : recommandé : permet de propager les information pré-définies du modèle dans le véhicule
+- Le modèle (facultatif) : recommandé : permet de propager les informations pré-définies du modèle dans le véhicule
 - Le reste des informations : immatriculation, date, statut,...
-- Eventuellement les documents liés
+- Éventuellement les documents liés
 
-![Créaton véhicule](img/creation-vehicule.png)
+![Création véhicule](img/creation-vehicule.png)
 
 
 #### Vues
@@ -107,7 +107,7 @@ Renseigner les différents éléments, puis sauvegarder. Le contrat est lié au 
  
 - Groupe 'Infos' :
 
-Renseigner toutes les infos générales du contart : référence, partenaire, responsable interne,...
+Renseigner toutes les infos générales du contrat : référence, partenaire, responsable interne,...
 
 - Groupe 'Dates' :
     - Le champ 'Reconduction tacite' est purement indicatif.
@@ -119,7 +119,7 @@ Renseigner toutes les infos générales du contart : référence, partenaire, re
     - Coûts périodiques : vous pouvez entrer des coûts périodiques ainsi que la fréquence (ex: Loyer). Cela aura pour effet d'alimenter les statistiques du coût total du contrat. L'ajout de ces coûts périodiques est géré par un Cron (tâche planifiée)
     - Coûts générés par les factures : Vous pouvez lier des factures au contrat, vous retrouverez les coûts associés ici.
 
-    Pour ajouter le lien avec des factures : Cliquez sur le bouton d'action "Lier facture(s) : 
+    Pour ajouter le lien avec des factures : Cliquez sur le bouton d'action "Lier facture(s)" : 
 
     ![Ajout contrat](img/contrat-facture-1.png)
 
@@ -163,9 +163,9 @@ Sauvegarder, puis l'intervention est liée au véhicule :
 
 - Statut : l'intervention peut être au statut Demandée / planifiée / En cours / Terminée.
 
-- Groupe 'Infos' : Reseigner le fournisseur, montant (estimé ou réel), kilométrage une fois l'intervention terminée. Note : renseigenr le kilométarge ici mettra à jour automatiquement le kilométarge du véhicule.
+- Groupe 'Infos' : Renseigner le fournisseur, montant (estimé ou réel), kilométrage une fois l'intervention terminée. Note : renseigenr le kilométrage ici mettra à jour automatiquement le kilométrage du véhicule.
 
-- Groupe 'Planning' : Renseigner la date planifiée, et la date réelle une fos l'intervention terminée.
+- Groupe 'Planning' : Renseigner la date planifiée, et la date réelle une fois l'intervention terminée.
 
 - Onglet 'Documents' :
 Vous pouvez renseigner ici tout type de document issu de la GED Open-prod (devis, rapport d'intervention scanné,...)
@@ -219,7 +219,7 @@ Vous pouvez aussi modifier les dimensions et mesures, exemples de mesures :
 
 ### Demandes d'utilisation
 
-Les demandes d'utilsiations peuvent être utiles pour les véhicules partagés ou non affiliés à un conducteur spécifique.
+Les demandes d'utilisations peuvent être utiles pour les véhicules partagés ou non affiliés à un conducteur spécifique.
 N'oubliez pas de donner le droit de demander une utilisation dans les paramètres utilisateurs.
 
 Menu Flotte automobile > Véhicules > Créer une demande d'utilisation :
