@@ -71,6 +71,14 @@ class A4I_vehicle_fleet_manager_vehicle_use(models.Model):
     # ===========================================================================
 
     @api.multi
+    def wkf_request(self):
+        """
+        Set the use as requested
+        """
+        for use_rc in self:
+            use_rc.state = 'requested'
+
+    @api.multi
     def wkf_accept(self):
         """
         Set the use as accepted

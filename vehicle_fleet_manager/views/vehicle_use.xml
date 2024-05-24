@@ -11,7 +11,6 @@
 		    <field name="view_mode">tree,form,calendar</field>
 		</record>
 
-
         <!-- TREE VIEW Uses -->
 		<record id='view_tree_vehicletfleetmanager_use_a4i' model='ir.ui.view'>
             <field name="name">view_tree_vehicletfleetmanager_use_a4i</field>
@@ -49,6 +48,7 @@
                 <form string="vehicle fleet manager - Use">
 
                     <header>
+                        <button name="wkf_request" string="Request" type="object" class="op_top_button_inline oe_highlight" icon="fa-refresh" states='accepted,rejected,done,cancel'/>
                         <button name="wkf_accept" string="Accept" type="object" class="op_top_button_inline oe_highlight" icon="fa-check" states='requested'/>
                         <button name="wkf_reject" string="Reject" type="object" class="op_top_button_inline openprod_cancel_button" icon="fa-times" states='requested'/>
                         <button name="wkf_done" string="Done" type="object" class="op_top_button_inline oe_highlight" icon="fa-check-circle" states='accepted'/>
@@ -86,6 +86,5 @@
                 </form>
             </field>
         </record>
-
     </data>
 </openerp>
