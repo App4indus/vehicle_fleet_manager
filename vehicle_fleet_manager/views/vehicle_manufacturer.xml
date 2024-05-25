@@ -16,7 +16,7 @@
             <field name="name">view_tree_vehicletfleetmanager_vehicle_manufacturer_a4i</field>
             <field name="model">a4i.vehiclefleetmanager.vehicle.manufacturer</field>
             <field name="arch" type="xml">
-                <tree string="vehicle fleet manager - vehicle manufacturers">
+                <tree string="Vehicle manufacturers">
                     <field name="code"/>
                     <field name="name"/>
                 </tree>
@@ -63,7 +63,7 @@
             <field name="name">view_form_vehicletfleetmanager_vehicle_manufacturer_a4i</field>
             <field name="model">a4i.vehiclefleetmanager.vehicle.manufacturer</field>
             <field name="arch" type="xml">
-                <form string="vehicle fleet manager - vehicle manufacturer">
+                <form string="Vehicle manufacturer">
 
 					<group col="6">
 						<group name="logo" colspan="1" col="1">

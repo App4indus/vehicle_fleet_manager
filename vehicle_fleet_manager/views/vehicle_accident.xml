@@ -16,7 +16,7 @@
             <field name="name">view_tree_vehicletfleetmanager_accident_a4i</field>
             <field name="model">a4i.vehiclefleetmanager.vehicle.accident</field>
             <field name="arch" type="xml">
-                <tree string="vehicle fleet manager - Accidents">
+                <tree string="Accidents">
                     <field name="name"/>
                     <field name="type"/>
                     <field name="vehicle_id"/>
@@ -37,7 +37,7 @@
             <field name="name">view_form_vehicletfleetmanager_accident_a4i</field>
             <field name="model">a4i.vehiclefleetmanager.vehicle.accident</field>
             <field name="arch" type="xml">
-                <form string="vehicle fleet manager - Accident">
+                <form string="Accident">
 
                     <header>
 						<button name="wkf_draft" string="Draft" type="object" class="op_top_button_inline oe_highlight" icon="fa-pencil" states='done'/>

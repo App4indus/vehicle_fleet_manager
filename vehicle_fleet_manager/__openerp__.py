@@ -9,7 +9,7 @@
     'module_type': 'base',
     'complexity': 'easy',
     'description': "",
-    'depends': ['base', 'administrative_contract'],
+    'depends': ['base', 'document', 'administrative_contract'],
     'data': [
         'security/groups.xml',
         'security/ir.model.access.csv',

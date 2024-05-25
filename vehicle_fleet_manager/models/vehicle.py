@@ -95,7 +95,7 @@ class A4I_vehiclefleetmanager_vehicle(models.Model):
     # ===========================================================================
     # ONCHANGES
     # ===========================================================================
-    @api.onchange('model_id')
+    @api.onchange('vehicle_model_id')
     def _onchange_propagate_model(self):
         """
         Propagate the model's infos
@@ -104,7 +104,7 @@ class A4I_vehiclefleetmanager_vehicle(models.Model):
         fields = ['vehicle_manufacturer_id', 'image', 'model_year', 'seats_nb', 'doors_nb', 'transmission_type',
                   'energy_type', 'fiscal_horsepower', 'engine_power', 'co2_emissions', 'environmental_bonus_malus',
                   'type_id']
-        model = self.model_id
+        model = self.vehicle_model_id
         for field in fields:
             val = getattr(model, field)
             setattr(self, field, val)
@@ -118,7 +118,7 @@ class A4I_vehiclefleetmanager_vehicle(models.Model):
     acquisition_mode = fields.Selection(selection='_get_acquisition', string='Acquisition mode')
     responsible_id = fields.Many2one('res.users', string='Responsible', help='Responsible of the vehicle', ondelete='restrict')
     type_id = fields.Many2one('a4i.vehiclefleetmanager.vehicle.type', string='Type', required=True, ondelete='set null')
-    model_id = fields.Many2one('a4i.vehiclefleetmanager.vehicle.model', string='Model', help="Set the model and all model's infos will be propagated to the vehicle", ondelete='set null')
+    vehicle_model_id = fields.Many2one('a4i.vehiclefleetmanager.vehicle.model', string='Model', help="Set the model and all model's infos will be propagated to the vehicle", ondelete='set null')
     vehicle_manufacturer_id = fields.Many2one('a4i.vehiclefleetmanager.vehicle.manufacturer', string='Manufacturer', required=True)
     vendor_id = fields.Many2one('res.partner', string='Vendor', help='Partner who sell the vehicle', domain="[('is_supplier', '=', True)]")
     image = fields.Binary(string='Logo',  help='Image')

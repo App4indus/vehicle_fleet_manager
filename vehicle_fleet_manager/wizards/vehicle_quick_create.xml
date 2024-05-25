@@ -21,7 +21,7 @@
 					<group colspan="4" col="4" name="vehicle" string="Vehicle">
 						<field name="name"/>
 						<field name="vehicle_manufacturer_id"/>
-						<field name="model_id" domain="[('vehicle_manufacturer_id', '=', vehicle_manufacturer_id)]"/>
+						<field name="vehicle_model_id" domain="[('vehicle_manufacturer_id', '=', vehicle_manufacturer_id)]"/>
 						<field name="type_id"/>
 						<field name="responsible_id" widget="many2one_avatar" />
 					</group>

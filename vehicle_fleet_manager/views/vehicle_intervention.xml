@@ -24,7 +24,7 @@
             <field name="name">view_tree_vehicletfleetmanager_intervention_a4i</field>
             <field name="model">a4i.vehiclefleetmanager.vehicle.intervention</field>
             <field name="arch" type="xml">
-                <tree string="vehicle fleet manager - Interventions">
+                <tree string="Interventions">
                     <field name="name"/>
                     <field name="vehicle_id"/>
                     <field name="type_id"/>
@@ -42,7 +42,7 @@
             <field name="name">view_form_vehicletfleetmanager_intervention_a4i</field>
             <field name="model">a4i.vehiclefleetmanager.vehicle.intervention</field>
             <field name="arch" type="xml">
-                <form string="vehicle fleet manager - Intervention">
+                <form string="Intervention">
 
                      <header>
 						<button name="wkf_requested" string="Requested" type="object" class="op_top_button_inline oe_highlight" icon="fa-question" states='done'/>

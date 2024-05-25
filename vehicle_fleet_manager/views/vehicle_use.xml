@@ -16,7 +16,7 @@
             <field name="name">view_tree_vehicletfleetmanager_use_a4i</field>
             <field name="model">a4i.vehiclefleetmanager.vehicle.use</field>
             <field name="arch" type="xml">
-                <tree string="Vehicle fleet manager - Uses">
+                <tree string="Uses">
                     <field name="name"/>
                     <field name="vehicle_id"/>
                     <field name="driver_id" />
@@ -45,7 +45,7 @@
             <field name="name">view_form_vehicletfleetmanager_use_a4i</field>
             <field name="model">a4i.vehiclefleetmanager.vehicle.use</field>
             <field name="arch" type="xml">
-                <form string="vehicle fleet manager - Use">
+                <form string="Use">
 
                     <header>
                         <button name="wkf_request" string="Request" type="object" class="op_top_button_inline oe_highlight" icon="fa-refresh" states='accepted,rejected,done,cancel'/>

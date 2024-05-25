@@ -24,7 +24,7 @@
             <field name="name">view_tree_vehicletfleetmanager_fine_a4i</field>
             <field name="model">a4i.vehiclefleetmanager.vehicle.fine</field>
             <field name="arch" type="xml">
-                <tree string="vehicle fleet manager - Fines">
+                <tree string="Fines">
                     <field name="name"/>
                     <field name="vehicle_id"/>
                     <field name="driver_id"/>
@@ -42,7 +42,7 @@
             <field name="name">view_form_vehicletfleetmanager_fine_a4i</field>
             <field name="model">a4i.vehiclefleetmanager.vehicle.fine</field>
             <field name="arch" type="xml">
-                <form string="vehicle fleet manager - Fine">
+                <form string="Fine">
 
                     <header>
 						<button name="wkf_received" string="Received" type="object" class="op_top_button_inline oe_highlight" icon="fa-envelope-o" states='paid,contested'/>
