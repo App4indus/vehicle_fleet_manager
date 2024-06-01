@@ -4,27 +4,27 @@
 	<data>
 
 		<!-- Top menu item -->
-		<menuitem name="Vehicle fleet" id="vehiclefleetmanager_root_menu_a4i" parent="" groups="base.group_user" sequence="400" web_icon="vehicle_fleet_manager,static/description/icon.png"/>
+		<menuitem name="Vehicle fleet" id="vehiclefleetmanager_root_menu_a4i" parent="" groups="group_vehicle_fleet_vehicle_user" sequence="400" web_icon="vehicle_fleet_manager,static/description/icon.png"/>
 
 		<!-- Menu items -->
-		<menuitem name="Vehicles" id="vehiclefleetmanager_vehicle_menu_a4i" parent="vehiclefleetmanager_root_menu_a4i" sequence="100"/>
+		<menuitem name="Vehicles" id="vehiclefleetmanager_vehicle_menu_a4i" parent="vehiclefleetmanager_root_menu_a4i" sequence="100" groups="group_vehicle_fleet_vehicle_user"/>
 		<menuitem name="Vehicles" id="vehiclefleetmanager_vehicles_menu_a4i" parent="vehiclefleetmanager_vehicle_menu_a4i" action="act_vehiclefleetmanager_vehicle_a4i" sequence="110"/>
 		<menuitem name="Quick use request" id="vehiclefleetmanager_use_request_menu_a4i" parent="vehiclefleetmanager_vehicle_menu_a4i" action="act_vehiclefleetmanager_vehicle_quick_use_request" sequence="120" groups="group_vehicle_fleet_vehicle_can_book"/>
 		<menuitem name="Uses" id="vehiclefleetmanager_uses_menu_a4i" parent="vehiclefleetmanager_vehicle_menu_a4i" action="act_vehiclefleetmanager_use_a4i" sequence="130"/>
-		<menuitem name="Fines" id="vehiclefleetmanager_vehicle_fine_menu_a4i" parent="vehiclefleetmanager_root_menu_a4i" sequence="300"/>
+		<menuitem name="Fines" id="vehiclefleetmanager_vehicle_fine_menu_a4i" parent="vehiclefleetmanager_root_menu_a4i" sequence="300" groups="group_vehicle_fleet_vehicle_fines_access"/>
 		<menuitem name="Quick create of fine" id="vehiclefleetmanager_add_fine_menu_a4i" parent="vehiclefleetmanager_vehicle_fine_menu_a4i" action="act_vehiclefleetmanager_fine_quick_create_a4i" sequence="310"/>
 		<menuitem name="Fines" id="vehiclefleetmanager_vehicle_fines_a4i" parent="vehiclefleetmanager_vehicle_fine_menu_a4i" action="act_vehiclefleetmanager_fine_a4i" sequence="320"/>
-		<menuitem name="Analysis" id="vehiclefleetmanager_fines_analysis_a4i" parent="vehiclefleetmanager_vehicle_fine_menu_a4i" action="act_vehiclefleetmanager_fine_analysis_a4i" sequence="330"/>
-		<menuitem name="Accidents" id="vehiclefleetmanager_vehicle_accident_menu_a4i" parent="vehiclefleetmanager_root_menu_a4i" sequence="400"/>
+		<menuitem name="Analysis" id="vehiclefleetmanager_fines_analysis_a4i" parent="vehiclefleetmanager_vehicle_fine_menu_a4i" action="act_vehiclefleetmanager_fine_analysis_a4i" sequence="330" groups="group_vehicle_fleet_vehicle_manager"/>
+		<menuitem name="Accidents" id="vehiclefleetmanager_vehicle_accident_menu_a4i" parent="vehiclefleetmanager_root_menu_a4i" sequence="400" groups="group_vehicle_fleet_vehicle_user"/>
 		<menuitem name="Quick create of accident" id="vehiclefleetmanager_add_accident_menu_a4i" parent="vehiclefleetmanager_vehicle_accident_menu_a4i" action="act_vehiclefleetmanager_accident_quick_create_a4i" sequence="410"/>
 		<menuitem name="Accidents" id="vehiclefleetmanager_vehicle_accidents_a4i" parent="vehiclefleetmanager_vehicle_accident_menu_a4i" action="act_vehiclefleetmanager_accident_a4i" sequence="420"/>
-		<menuitem name="Interventions" id="vehiclefleetmanager_vehicle_intervention_menu_a4i" parent="vehiclefleetmanager_root_menu_a4i" sequence="500"/>
+		<menuitem name="Interventions" id="vehiclefleetmanager_vehicle_intervention_menu_a4i" parent="vehiclefleetmanager_root_menu_a4i" sequence="500" groups="group_vehicle_fleet_vehicle_user"/>
 		<menuitem name="Quick create of intervention" id="vehiclefleetmanager_add_intervention_menu_a4i" parent="vehiclefleetmanager_vehicle_intervention_menu_a4i" action="act_vehiclefleetmanager_intervention_quick_create_a4i" sequence="510"/>
 		<menuitem name="Interventions" id="vehiclefleetmanager_vehicle_interventions_a4i" parent="vehiclefleetmanager_vehicle_intervention_menu_a4i" action="act_vehiclefleetmanager_intervention_a4i" sequence="520"/>
 		<menuitem name="Analysis" id="vehiclefleetmanager_interventions_analysis_a4i" parent="vehiclefleetmanager_vehicle_intervention_menu_a4i" action="act_vehiclefleetmanager_intervention_analysis_a4i" sequence="530"/>
 		<menuitem name="Contracts" id="vehiclefleetmanager_contract_menu_a4i" parent="vehiclefleetmanager_root_menu_a4i" sequence="600"/>
 		<menuitem name="Contracts" id="vehiclefleetmanager_contracts_a4i" parent="vehiclefleetmanager_contract_menu_a4i" action="act_vehiclefleetmanager_contract_a4i" sequence="620"/>
-		<menuitem name="Configuration" id="vehiclefleetmanager_config_menu_a4i" parent="vehiclefleetmanager_root_menu_a4i" sequence="900"/>
+		<menuitem name="Configuration" id="vehiclefleetmanager_config_menu_a4i" parent="vehiclefleetmanager_root_menu_a4i" sequence="900" groups="group_vehicle_fleet_vehicle_administrator"/>
 		<menuitem name="Vehicle manufacturers" id="vehiclefleetmanager_config_vehicle_manufacturers_menu_a4i" parent="vehiclefleetmanager_config_menu_a4i" action="act_vehiclefleetmanager_vehicle_manufacturer_a4i" sequence="910"/>
 		<menuitem name="Vehicle models" id="vehiclefleetmanager_config_vehicle_models_menu_a4i" parent="vehiclefleetmanager_config_menu_a4i" action="act_vehiclefleetmanager_vehicle_model_a4i" sequence="920"/>
 		<menuitem name="Drivers" id="vehiclefleetmanager_config_drivers_menu_a4i" parent="vehiclefleetmanager_config_menu_a4i" action="act_vehiclefleetmanager_driver_a4i" sequence="930"/>
