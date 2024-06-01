@@ -160,7 +160,7 @@
                                         </field>
                                     </page>
 
-                                    <page name="fines" string="Fines" attrs="{'invisible': [('state', 'in', ('requested', 'ordered'))]}">
+                                    <page name="fines" string="Fines" attrs="{'invisible': [('state', 'in', ('requested', 'ordered'))]}" groups="vehicle_fleet_manager.group_vehicle_fleet_vehicle_fines_access">
                                         <field name="fine_ids" nolabel="1">
                                             <tree>
                                                  <field name="driver_id"/>
@@ -233,7 +233,7 @@
                                 <button name="request_use" string="Request use" type="object" class="oe_inline oe_stat_button" icon="fa-car" />
                             <separator colspan="1" string="Analysis" name="separator_analysis_menu"/>
                                 <button name="show_contracts" string="Show contracts" type="object" class="oe_inline oe_stat_button" icon="fa-file-text-o" />
-                                <button name="show_fines" string="Show fines" type="object" class="oe_inline oe_stat_button" icon="fa-file-text-o" />
+                                <button name="show_fines" string="Show fines" type="object" class="oe_inline oe_stat_button" icon="fa-file-text-o" groups="vehicle_fleet_manager.group_vehicle_fleet_vehicle_fines_access"/>
                                 <button name="show_interventions" string="Show interventions" type="object" class="oe_inline oe_stat_button" icon="fa-file-text-o" />
                                 <button name="show_accidents" string="Show accidents" type="object" class="oe_inline oe_stat_button" icon="fa-file-text-o" />
                                 <button name="show_uses" string="Show uses" type="object" class="oe_inline oe_stat_button" icon="fa-file-text-o" />

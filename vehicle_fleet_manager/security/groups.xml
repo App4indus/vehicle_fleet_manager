@@ -7,12 +7,18 @@
 
 		<record model="ir.module.category" id="group_vehicle_base">
             <field name="name">Vehicle fleet management</field>
+			<field name="category_id" eval="ref('vehicle_fleet_manager.group_vehicle_base')"/>
 			<field name="sequence">1000</field>
         </record>
 
 		<record model="res.groups" id="group_vehicle_fleet_vehicle_can_book">
             <field name="name">Can book a vehicle</field>
-            <field name="category_id" eval="ref('base.module_category_usability')"/>
+            <field name="category_id" eval="ref('vehicle_fleet_manager.group_vehicle_base')"/>
+        </record>
+
+		<record model="res.groups" id="group_vehicle_fleet_vehicle_fines_access">
+            <field name="name">Can access to fines</field>
+            <field name="category_id" eval="ref('vehicle_fleet_manager.group_vehicle_base')"/>
         </record>
 
 		<record model="res.groups" id="group_vehicle_fleet_vehicle_user">

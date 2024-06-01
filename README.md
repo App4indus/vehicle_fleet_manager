@@ -1,14 +1,15 @@
 # Module Open-prod : Gestion de Flotte Automobile
 
-[![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0) [![Free](https://img.shields.io/badge/Free-Yes-green.svg)](https://github.com/votre-utilisateur/module-gestion-flotte) ![Open-prod: v9](https://img.shields.io/badge/Open--prod-v9-orange)
-![Langues supportées: FR, EN](https://img.shields.io/badge/langage-FR%20%7C%20EN-yellow)
+[![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0) [![Fees](https://img.shields.io/badge/Fees-No-green.svg)](https://github.com/votre-utilisateur/module-gestion-flotte) ![Open-prod: v9](https://img.shields.io/badge/Open--prod-v9-orange)
+![Langues supportées: FR, EN](https://img.shields.io/badge/Langage-FR%20%7C%20EN-yellow)
+![Cycle](https://img.shields.io/badge/Cycle-Release%20Candidat%201-purple)
 
-<img src="https://app4indus.com/wp-content/uploads/2024/01/icon.png" alt="Gestion de Flotte" width="200" />
+<img src="https://app4indus.com/wp-content/uploads/2024/01/icon.png" alt="Gestion de Flotte" width="200"/>
 
 
 ## Vue d'ensemble
 
-Bienvenue sur le repo **Module de Gestion de Flotte Automobile**. Ce module est conçu pour optimiser et simplifier la gestion de votre flotte de véhicules. Que vous gériez une petite flotte de voitures ou une grande flotte de camions, ce module vous fournit les outils nécessaires pour assurer des opérations de flotte efficaces.
+ Ce module est conçu pour optimiser et simplifier la gestion de votre flotte de véhicules au travers de [l'ERP Open-prod](https://open-prod.com/) Que vous gériez une petite flotte de voitures ou une grande flotte de camions, ce module vous fournit les outils nécessaires pour assurer et centraliser des opérations de flotte efficaces.
 
 
 ## Fonctionnalités
@@ -16,7 +17,7 @@ Bienvenue sur le repo **Module de Gestion de Flotte Automobile**. Ce module est 
 - **Suivi des Véhicules** : Gérez vos véhicules et tout ce qui en découle :iInterventions, documents, contrats, contraventions, coûts,...
 - **Planification de la Maintenance** : Planifiez et suivez les activités de maintenance pour garder vos véhicules en bon état.
 - **Localisation** : Avec la vue carte, géolocalisez vos véhicules (nécessite le développement d'un connecteur selon plateforme de géolocalisation)
-- **Gestion des Conducteurs** : Gérez les affectations des conducteurs, leurs dossiers et les demandes d'utilsiations.
+- **Gestion des Conducteurs** : Gérez les affectations des conducteurs, leurs dossiers et les demandes d'utilisations.
 - **Analyses** : Analysez les statistiques : coûts, sinistres, contraventions,...
 
 ## Dépendances
@@ -41,14 +42,14 @@ Ce module dépend du module **Administrative Contract**, qui est inclus dans le 
 4. **Mettez à jour la Liste des Applications** : Dans Open-prod, mettez à jour la liste des applications pour inclure le nouveau module : Configuration > Applications > Mettre à jour la liste des applications
 
 
-5. **Installer le Module** : Dans Open-prod, installez le module : Configuration > Applications > Toutes les applications > recheercher 'vehicle_fleet_manager' > Insaller
+5. **Installer le Module** : Dans Open-prod, installez le module : Configuration > Applications > Toutes les applications > rechercher 'Vehicule' > Installer. L'installeur vous avertira que le module "Administrative contract" sera également installé.
 
 ## Utilisation
 
 Une fois installé, affectez les droits requis dans la configuration d'Open-prod. Puis, rendez-vous dans le menu 'Flotte automobile'.
-Consultez la notice d'utilisation : 
+Consultez la notice d'utilisation qui contient toute la documentatio nécessaire à l'utilisation du module : 
 
-[Notice d'utilisation](docs/user_manual_fr.md)
+> [Notice d'utilisation](docs/user_manual_fr.md)
 
 
 ## Screens 
