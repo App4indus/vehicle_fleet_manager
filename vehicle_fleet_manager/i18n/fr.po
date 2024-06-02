@@ -158,8 +158,8 @@ msgstr "Peut réserver un véhicule"
 
 #. module: vehicle_fleet_manager
 #: model:res.groups,name:vehicle_fleet_manager.group_vehicle_fleet_vehicle_fines_access
-msgid "Can access to fines"
-msgstr "Peut accéder aux contraventions"
+msgid "Access to fines"
+msgstr "Accès aux contraventions"
 
 #. module: vehicle_fleet_manager
 #: model:ir.ui.view,arch_db:vehicle_fleet_manager.view_accident_quick_create_a4i

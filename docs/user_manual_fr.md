@@ -12,10 +12,6 @@
 
 Ce module permet de suivre une flotte automobile : véhicules, contrats associés, PV, sinistres, coûts,...
 
-## **Prérequis**
-
-Se rendre sur la page du module via le menu principal > Flotte automobile
-
 ## **Configuration initiale**
 
 ### **Droits**
@@ -23,16 +19,18 @@ Se rendre sur la page du module via le menu principal > Flotte automobile
 Rendez-vous dans la configuration d'Open-prod > Utilisateurs et sécurité > Utilisateurs. Affectez les droits selon les utilisateurs souhaités.
 Niveaux de droits standards :
 
-![Droits](img/droits.png)
+![Droits](img/access.png)
 
-- Utilisateur : Permet l'utilisation générale, la consultation des éléments.
+- Utilisateur : Permet l'accès à l'application, l'utilisation générale, la consultation des éléments.
 - Fonctionnel : En plus du profil utilisateur, la modification des éléments.
 - Responsable : En plus du profil utilisateur, permet la création des fiches : véhicules, contrats, interventions,...
 - Administrateur : En plus du profil responsable, permet d'accéder à la configuration du modules : modèles, fabricants,...
 
-Il existe également un droit spécifique pour les demandes de réservations de véhicules : Droits supplémentaires > Peut réserver un véhicule
+Il existe également des droits spécifiques pour :
+- Les demandes de réservations de véhicules : Peut réserver un véhicule
+- L'accès aux contraventions : Accès aux contraventions
 
-![Droits](img/droits-resa.png)
+Cocher ces droits si l'utilisateur concerné doit pouvoir y accéder.
 
 ### **Fabricants**
 
@@ -179,6 +177,8 @@ Vous pouvez renseigner les notes internes liées à l'intervetion : remarques é
 
 ### Contraventions
 
+    Rappel : Le droit d'accès doit avoir été octroyé
+
 Pour ajouter une contravention, utiliser l'assistant de création rapide. Une fois sauvegardée, elle est liée au véhicule.
 
 ![Ajout intervention](img/infraction-1.png)
@@ -218,6 +218,8 @@ Vous pouvez aussi modifier les dimensions et mesures, exemples de mesures :
 
 
 ### Demandes d'utilisation
+
+    Rappel : Le droit d'accès doit avoir été octroyé
 
 Les demandes d'utilisations peuvent être utiles pour les véhicules partagés ou non affiliés à un conducteur spécifique.
 N'oubliez pas de donner le droit de demander une utilisation dans les paramètres utilisateurs.
