@@ -17,7 +17,7 @@
         </record>
 
 		<record model="res.groups" id="group_vehicle_fleet_vehicle_fines_access">
-            <field name="name">Can access to fines</field>
+            <field name="name">Access to fines</field>
             <field name="category_id" eval="ref('vehicle_fleet_manager.group_vehicle_base')"/>
         </record>
 
